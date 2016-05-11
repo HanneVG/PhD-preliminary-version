@@ -1,0 +1,107 @@
+\chapter{AquaCrop parameters}\label{ch:appendixA}
+\chaptermark{Appendix A}
+
+
+\begin{footnotesize}
+\begin{longtable}{p{0.15\textwidth}p{0.54\textwidth}p{0.22\textwidth}}
+\caption{AquaCrop crop parameters}\\
+\toprule
+\textbf{Parameter} & \textbf{Description} & \textbf{Units} \\
+\midrule
+\endfirsthead
+
+\caption*{\autoref{tab:AnA_croppar} Cont.: AquaCrop crop parameters}\\
+\toprule
+\textbf{Parameter} & \textbf{Description} & \textbf{Units} \\
+\midrule
+\endhead
+
+anaer & Anaerobiotic point at which deficient aeration occurs & vol\% below  \Tsat \\
+ccs   & Soil surface covered by an individual seedling at 90\% emergence & cm² \\
+CCx   & Maximum canopy cover & m2/m2 \\
+cdc   & Decrease in canopy cover & m2/m2/GDD or m2/m2/day \\
+cgc   & Increase in canopy cover & m2/m2/GDD or m2/m2/day \\
+den   & Number of plants per hectare & plants/ha \\
+det   & Crop determinancy linked (1) or unlinked (0) with flowering &  \\
+eme   & Period from sowing to emergence & GDD or day \\
+etos  & ETo-sum to be exceeded during stress period before senescence is triggered & mm \\
+evardc & Effect of canopy cover in reducing soil evaporation in late season stage &  \\
+exc   & Excess of potential fruits & \% \\
+flo   & Period from sowing to flowering/tuber formation & GDD or day \\
+flolen & Length of flowering & GDD or day \\
+fsink & Crop performance under elevated atmospheric CO2 concentration & \% \\
+fwpy  & Ratio of water productivity normalized for ETo and CO2 during yield formation & \% \\
+hilen & Period of harvest index building-up during yield formation & GDD or day \\
+hinc  & Allowable maximum increase of specified HI & \% \\
+hingsto & Coefficient describing negative impact on HI of stomatal closure during yield formation &  \\
+HI$_0$   & Reference harvest index & \% \\
+hipsflo & Possible increase of HI due to water stress before flowering & \% \\
+hipsveg & Coefficient describing positive impact on HI of restricted vegetative growth during yield formation &  \\
+kcx    & Crop coefficient when canopy is complete but prior to senescence &  \\
+kcdcl & Decline of crop coefficient as a result of ageing, nitrogen deficiency, etc. & \%/day \\
+m     & Determination of crop cycle by calendar days (1) or by growing degree-days (0) &  \\
+mat   & Total length of crop cycle from sowing to maturity & GDD or day \\
+pexlw & Soil water depletion factor for canopy expansion - lower threshold &  \\
+pexshp & Shape factor for water stress coefficient for canopy expansion (0.0 = straight line) &  \\
+pexup & Soil water depletion factor for canopy expansion - upper threshold &  \\
+polmn & Minimum air temperature below which pollination starts to fail (cold stress) & °C \\
+polmx & Maximum air temperature above which pollination starts to fail (heat stress) & °C \\
+ppol  & Soil water depletion factor for pollination - upper threshold &  \\
+psen  & Soil water depletion factor for canopy senescence - upper threshold &  \\
+psenshp & Shape factor for water stress coefficient for canopy senescence (0.0 = straight line) &  \\
+psto  & Soil water depletion fraction for stomatal control - upper threshold &  \\
+pstoshp & Shape factor for water stress coefficient for stomatal control (0.0 = straight line) &  \\
+root  & Period from sowing to maximum rooting depth & GDD or day \\
+rtexlw & Maximum root water extraction in bottom quarter of root zone & m3/m3 soil/day \\
+rtexup & Maximum root water extraction in top quarter of root zone & m3/m3 soil/day  \\
+rtn   & Minimum effective rooting depth & m \\
+rtshp & Shape factor describing root zone expansion &  \\
+rtx   & Maximum effective rooting depth & m \\
+sen   & Period from sowing to start senescence & GDD or day \\
+sow   & Crop is sown (1) or transplanted (2) &  \\
+stbio & Minimum growing degrees required for full biomass production & °C/day \\
+tb    & Base temperature below which crop development does not progress & °C \\
+tup   & Upper temperature above which crop development no longer increases with an increase in temperature & °C \\
+typ   & Crop type (1= leafy vegetable crop, 2 = fruit/grain producing, 3 = root/tuber) &  \\
+WP*   & Water productivity normalized for \ETo and \COtwo & g/m2 \\
+\bottomrule
+  \label{tab:AnA_croppar}%
+\end{longtable}
+
+
+\begin{tabularx}{\textwidth}{lccccccc}
+\caption{Default soil parameter values for various soil textural classess in AquaCrop version 4.0 and AquaCrop version 5.0. Default values for soil water content at saturation (\Tsat), field capacity (\Tfc) and wilting point (\Tpwp) are equal for all AquaCrop versions. Default values for saturated hydraulic conductivity (\Ksat) and derived curve numbers (CN) differ between AquaCrop version 4.0 and version 5.0.}\\
+\toprule
+      & \multicolumn{3}{c}{\textbf{All versions}} & \multicolumn{2}{c}{\textbf{Version 4.0}} & \multicolumn{2}{c}{\textbf{Version 5.0}} \\
+\textbf{Texture} & \textbf{\Tsat} & \textbf{\Tfc} & \textbf{\Tpwp} & \textbf{\Ksat} & \textbf{CN} & \textbf{\Ksat} & \textbf{CN} \\
+\textbf{} & (vol\%) & (vol\%) & (vol\%) & (mm/day) & (-)   & (mm/day) & (-) \\
+\midrule
+Sand  & 36    & 13    & 6     & 1500  & 65    & 3000  & 46 \\
+Loamy sand & 38    & 16    & 8     & 800   & 65    & 2200  & 46 \\
+Sandy loam & 41    & 22    & 10    & 500   & 65    & 1200  & 46 \\
+Loam  & 46    & 31    & 15    & 250   & 65    & 500   & 61 \\
+Silt loam & 46    & 33    & 13    & 150   & 75    & 575   & 61 \\
+Silt  & 43    & 33    & 9     & 50    & 75    & 500   & 61 \\
+Sandy clay loam & 47    & 32    & 20    & 125   & 75    & 225   & 72 \\
+Clay loam & 50    & 39    & 23    & 100   & 75    & 125   & 72 \\
+Silty clay loam & 52    & 44    & 23    & 120   & 75    & 150   & 72 \\
+Sandy clay & 50    & 39    & 27    & 75    & 75    & 35    & 77 \\
+Silty clay & 54    & 50    & 32    & 15    & 80    & 100   & 72 \\
+Clay  & 55    & 54    & 39    & 2     & 85    & 35    & 77 \\
+Impermeable & 0.5   & 0.3   & 0.1   & 0     & 85    & 0     & 77 \\
+\bottomrule
+  \label{tab:AnA_soilpar}%
+\end{tabularx}%
+\end{footnotesize}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Keep the following \cleardoublepage at the end of this file, 
+% otherwise \includeonly includes empty pages.
+\cleardoublepage
+
+% vim: tw=70 nocindent expandtab foldmethod=marker foldmarker={{{}{,}{}}}

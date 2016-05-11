@@ -1,0 +1,49 @@
+\chapter{Curriculum vitae}\label{ch:curriculum}
+
+\subsection*{Personal information}
+\begin{tabular}{cll}
+ \multirow{5}[0]{*}{\includegraphics[width=5cm]{foto.jpg}}& 
+Name 						& Hanne Van Gaelen \\
+Date of birth 	& 12$^{th}$ April 1988 \\
+Nationality			& Belgian \\
+Email 					& hanne.vangaelen@kuleuven.be \\
+& hanne\_vg@hotmail.be 
+\end{tabular}
+
+\subsection*{Education}
+\begin{tabular}{lp{9.5cm}}
+2012--2016 & PhD in Bioscience Engineering, KU Leuven (Belgium) - Aspirant FWO \\
+2011--2012 & MSc in Water Resources Engineering, KU Leuven \& VUB (Belgium)\\
+2009--2011 & MSc in Bioscience Engineering: Soil and Water Management, KU Leuven (Belgium) \\
+2006--2009 & BSc in Bioscience Engineering: Land and Forest Management, KU Leuven (Belgium) 
+\end{tabular}
+
+\subsection*{Experience}
+\begin{tabular}{lp{9.5cm}}
+2012--2016 & Teaching assistant and supervisor of MSc thesis projects in Bioscience Engineering and Water Resources Engineering, KU Leuven (Belgium)\\
+2012--2016 & Trainer of AquaCrop workshops in Bangladesh, India, Egypt, the Philippines, Ethiopia, Morocco and Sri Lanka, Food and Agricultura Organization of United Nations (FAO) and International Atomic Energy Agency (IAEA)
+\end{tabular}
+
+\subsection*{Publications}
+\longfullcite{vangaelen2016a}\\[6pt]
+\longfullcite{vangaelen2016}\\[6pt]
+\longfullcite{raes2015}\\[6pt]
+\longfullcite{vangaelen2015a}
+
+
+\enlargethispage{2\baselineskip}
+\subsection*{Presentations at international scientific conferences as first author}
+\longfullcite{vangaelen2015b}\textit{Poster presentation}\\[6pt]
+\longfullcite{vangaelen2014}\textit{Poster presentation}\\[6pt]
+\longfullcite{vangaelen2014a}\textit{Oral presentation}\\[6pt]
+\longfullcite{vangaelen2013a}\textit{Oral presentation}\\[6pt]
+\longfullcite{vangaelen2013}\textit{Poster presentation}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Keep the following \cleardoublepage at the end of this file, 
+% otherwise \includeonly includes empty pages.
+\cleardoublepage
+
+% vim: tw=70 nocindent expandtab foldmethod=marker foldmarker={{{}{,}{}}}

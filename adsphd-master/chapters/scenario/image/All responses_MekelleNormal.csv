@@ -1,0 +1,244 @@
+FM;Climate;Year;Fert;Soil;Crop;FMSoil;FMCrop;FMFert;Y;WPET
+Bunds;Mekelle;Normal;ANon limiting  ;CL;Long;Bunds_CL;Bunds_Long;Bunds_ANon limiting  ;36.5;29.9
+Bunds;Mekelle;Normal;Moderate  ;CL;Long;Bunds_CL;Bunds_Long;Bunds_Moderate  ;35.1;29.4
+Bunds;Mekelle;Normal;Poor  ;CL;Long;Bunds_CL;Bunds_Long;Bunds_Poor  ;20.3;16.2
+Bunds;Mekelle;Normal;ANon limiting  ;CL;Medium;Bunds_CL;Bunds_Medium;Bunds_ANon limiting  ;25.2;19.1
+Bunds;Mekelle;Normal;Moderate  ;CL;Medium;Bunds_CL;Bunds_Medium;Bunds_Moderate  ;14.8;11.4
+Bunds;Mekelle;Normal;Poor  ;CL;Medium;Bunds_CL;Bunds_Medium;Bunds_Poor  ;5.8;2.5
+Bunds;Mekelle;Normal;ANon limiting  ;CL;Short;Bunds_CL;Bunds_Short;Bunds_ANon limiting  ;6.3;3.7
+Bunds;Mekelle;Normal;Moderate  ;CL;Short;Bunds_CL;Bunds_Short;Bunds_Moderate  ;3.1;3.1
+Bunds;Mekelle;Normal;Poor  ;CL;Short;Bunds_CL;Bunds_Short;Bunds_Poor  ;0.7;1.3
+Bunds;Mekelle;Normal;ANon limiting  ;LS;Long;Bunds_LS;Bunds_Long;Bunds_ANon limiting  ;0.0;0.0
+Bunds;Mekelle;Normal;Moderate  ;LS;Long;Bunds_LS;Bunds_Long;Bunds_Moderate  ;0.0;0.0
+Bunds;Mekelle;Normal;Poor  ;LS;Long;Bunds_LS;Bunds_Long;Bunds_Poor  ;0.0;0.0
+Bunds;Mekelle;Normal;ANon limiting  ;LS;Medium;Bunds_LS;Bunds_Medium;Bunds_ANon limiting  ;0.0;0.0
+Bunds;Mekelle;Normal;Moderate  ;LS;Medium;Bunds_LS;Bunds_Medium;Bunds_Moderate  ;0.0;0.0
+Bunds;Mekelle;Normal;Poor  ;LS;Medium;Bunds_LS;Bunds_Medium;Bunds_Poor  ;0.0;0.0
+Bunds;Mekelle;Normal;ANon limiting  ;LS;Short;Bunds_LS;Bunds_Short;Bunds_ANon limiting  ;0.0;0.0
+Bunds;Mekelle;Normal;Moderate  ;LS;Short;Bunds_LS;Bunds_Short;Bunds_Moderate  ;0.0;0.0
+Bunds;Mekelle;Normal;Poor  ;LS;Short;Bunds_LS;Bunds_Short;Bunds_Poor  ;0.0;0.0
+Bunds;Mekelle;Normal;ANon limiting  ;S;Long;Bunds_S;Bunds_Long;Bunds_ANon limiting  ;66.3;49.6
+Bunds;Mekelle;Normal;Moderate  ;S;Long;Bunds_S;Bunds_Long;Bunds_Moderate  ;63.0;52.8
+Bunds;Mekelle;Normal;Poor  ;S;Long;Bunds_S;Bunds_Long;Bunds_Poor  ;58.2;47.0
+Bunds;Mekelle;Normal;ANon limiting  ;S;Medium;Bunds_S;Bunds_Medium;Bunds_ANon limiting  ;54.1;44.2
+Bunds;Mekelle;Normal;Moderate  ;S;Medium;Bunds_S;Bunds_Medium;Bunds_Moderate  ;42.2;32.9
+Bunds;Mekelle;Normal;Poor  ;S;Medium;Bunds_S;Bunds_Medium;Bunds_Poor  ;17.9;13.1
+Bunds;Mekelle;Normal;ANon limiting  ;S;Short;Bunds_S;Bunds_Short;Bunds_ANon limiting  ;25.0;18.9
+Bunds;Mekelle;Normal;Moderate  ;S;Short;Bunds_S;Bunds_Short;Bunds_Moderate  ;11.2;8.5
+Bunds;Mekelle;Normal;Poor  ;S;Short;Bunds_S;Bunds_Short;Bunds_Poor  ;8.2;5.2
+M50;Mekelle;Normal;ANon limiting  ;CL;Long;M50_CL;M50_Long;M50_ANon limiting  ;52.4;68.2
+M50;Mekelle;Normal;Moderate  ;CL;Long;M50_CL;M50_Long;M50_Moderate  ;49.7;71.9
+M50;Mekelle;Normal;Poor  ;CL;Long;M50_CL;M50_Long;M50_Poor  ;24.1;53.5
+M50;Mekelle;Normal;ANon limiting  ;CL;Medium;M50_CL;M50_Medium;M50_ANon limiting  ;28.6;46.1
+M50;Mekelle;Normal;Moderate  ;CL;Medium;M50_CL;M50_Medium;M50_Moderate  ;19.7;45.9
+M50;Mekelle;Normal;Poor  ;CL;Medium;M50_CL;M50_Medium;M50_Poor  ;4.7;33.8
+M50;Mekelle;Normal;ANon limiting  ;CL;Short;M50_CL;M50_Short;M50_ANon limiting  ;1.9;24.1
+M50;Mekelle;Normal;Moderate  ;CL;Short;M50_CL;M50_Short;M50_Moderate  ;1.4;34.0
+M50;Mekelle;Normal;Poor  ;CL;Short;M50_CL;M50_Short;M50_Poor  ;-3.1;33.5
+M50;Mekelle;Normal;ANon limiting  ;LS;Long;M50_LS;M50_Long;M50_ANon limiting  ;8.5;29.0
+M50;Mekelle;Normal;Moderate  ;LS;Long;M50_LS;M50_Long;M50_Moderate  ;11.6;34.3
+M50;Mekelle;Normal;Poor  ;LS;Long;M50_LS;M50_Long;M50_Poor  ;14.0;41.7
+M50;Mekelle;Normal;ANon limiting  ;LS;Medium;M50_LS;M50_Medium;M50_ANon limiting  ;7.0;27.3
+M50;Mekelle;Normal;Moderate  ;LS;Medium;M50_LS;M50_Medium;M50_Moderate  ;9.1;33.8
+M50;Mekelle;Normal;Poor  ;LS;Medium;M50_LS;M50_Medium;M50_Poor  ;8.4;35.9
+M50;Mekelle;Normal;ANon limiting  ;LS;Short;M50_LS;M50_Short;M50_ANon limiting  ;3.8;24.2
+M50;Mekelle;Normal;Moderate  ;LS;Short;M50_LS;M50_Short;M50_Moderate  ;6.0;32.0
+M50;Mekelle;Normal;Poor  ;LS;Short;M50_LS;M50_Short;M50_Poor  ;5.5;34.2
+M50;Mekelle;Normal;ANon limiting  ;S;Long;M50_S;M50_Long;M50_ANon limiting  ;85.8;94.1
+M50;Mekelle;Normal;Moderate  ;S;Long;M50_S;M50_Long;M50_Moderate  ;91.2;111.0
+M50;Mekelle;Normal;Poor  ;S;Long;M50_S;M50_Long;M50_Poor  ;67.2;92.2
+M50;Mekelle;Normal;ANon limiting  ;S;Medium;M50_S;M50_Medium;M50_ANon limiting  ;65.5;78.5
+M50;Mekelle;Normal;Moderate  ;S;Medium;M50_S;M50_Medium;M50_Moderate  ;49.8;69.6
+M50;Mekelle;Normal;Poor  ;S;Medium;M50_S;M50_Medium;M50_Poor  ;22.9;49.0
+M50;Mekelle;Normal;ANon limiting  ;S;Short;M50_S;M50_Short;M50_ANon limiting  ;27.8;43.8
+M50;Mekelle;Normal;Moderate  ;S;Short;M50_S;M50_Short;M50_Moderate  ;14.0;40.2
+M50;Mekelle;Normal;Poor  ;S;Short;M50_S;M50_Short;M50_Poor  ;9.2;39.6
+M95;Mekelle;Normal;ANon limiting  ;CL;Long;M95_CL;M95_Long;M95_ANon limiting  ;63.8;124.2
+M95;Mekelle;Normal;Moderate  ;CL;Long;M95_CL;M95_Long;M95_Moderate  ;59.7;139.9
+M95;Mekelle;Normal;Poor  ;CL;Long;M95_CL;M95_Long;M95_Poor  ;24.3;131.0
+M95;Mekelle;Normal;ANon limiting  ;CL;Medium;M95_CL;M95_Medium;M95_ANon limiting  ;31.4;87.3
+M95;Mekelle;Normal;Moderate  ;CL;Medium;M95_CL;M95_Medium;M95_Moderate  ;21.4;102.7
+M95;Mekelle;Normal;Poor  ;CL;Medium;M95_CL;M95_Medium;M95_Poor  ;3.6;110.2
+M95;Mekelle;Normal;ANon limiting  ;CL;Short;M95_CL;M95_Short;M95_ANon limiting  ;0.3;60.0
+M95;Mekelle;Normal;Moderate  ;CL;Short;M95_CL;M95_Short;M95_Moderate  ;0.7;96.9
+M95;Mekelle;Normal;Poor  ;CL;Short;M95_CL;M95_Short;M95_Poor  ;-6.4;117.7
+M95;Mekelle;Normal;ANon limiting  ;LS;Long;M95_LS;M95_Long;M95_ANon limiting  ;20.1;77.4
+M95;Mekelle;Normal;Moderate  ;LS;Long;M95_LS;M95_Long;M95_Moderate  ;35.4;115.2
+M95;Mekelle;Normal;Poor  ;LS;Long;M95_LS;M95_Long;M95_Poor  ;37.4;138.8
+M95;Mekelle;Normal;ANon limiting  ;LS;Medium;M95_LS;M95_Medium;M95_ANon limiting  ;21.4;81.3
+M95;Mekelle;Normal;Moderate  ;LS;Medium;M95_LS;M95_Medium;M95_Moderate  ;29.1;109.8
+M95;Mekelle;Normal;Poor  ;LS;Medium;M95_LS;M95_Medium;M95_Poor  ;19.4;110.7
+M95;Mekelle;Normal;ANon limiting  ;LS;Short;M95_LS;M95_Short;M95_ANon limiting  ;14.2;71.3
+M95;Mekelle;Normal;Moderate  ;LS;Short;M95_LS;M95_Short;M95_Moderate  ;15.0;94.1
+M95;Mekelle;Normal;Poor  ;LS;Short;M95_LS;M95_Short;M95_Poor  ;13.0;109.2
+M95;Mekelle;Normal;ANon limiting  ;S;Long;M95_S;M95_Long;M95_ANon limiting  ;157.5;197.0
+M95;Mekelle;Normal;Moderate  ;S;Long;M95_S;M95_Long;M95_Moderate  ;110.9;198.4
+M95;Mekelle;Normal;Poor  ;S;Long;M95_S;M95_Long;M95_Poor  ;65.0;193.0
+M95;Mekelle;Normal;ANon limiting  ;S;Medium;M95_S;M95_Medium;M95_ANon limiting  ;84.4;133.1
+M95;Mekelle;Normal;Moderate  ;S;Medium;M95_S;M95_Medium;M95_Moderate  ;50.2;139.9
+M95;Mekelle;Normal;Poor  ;S;Medium;M95_S;M95_Medium;M95_Poor  ;16.2;134.5
+M95;Mekelle;Normal;ANon limiting  ;S;Short;M95_S;M95_Short;M95_ANon limiting  ;21.6;82.0
+M95;Mekelle;Normal;Moderate  ;S;Short;M95_S;M95_Short;M95_Moderate  ;3.5;102.6
+M95;Mekelle;Normal;Poor  ;S;Short;M95_S;M95_Short;M95_Poor  ;-2.6;127.3
+Restr;Mekelle;Normal;ANon limiting  ;CL;Long;Restr_CL;Restr_Long;Restr_ANon limiting  ;-62.8;-55.4
+Restr;Mekelle;Normal;Moderate  ;CL;Long;Restr_CL;Restr_Long;Restr_Moderate  ;-59.7;-52.9
+Restr;Mekelle;Normal;Poor  ;CL;Long;Restr_CL;Restr_Long;Restr_Poor  ;-61.1;-54.9
+Restr;Mekelle;Normal;ANon limiting  ;CL;Medium;Restr_CL;Restr_Medium;Restr_ANon limiting  ;-58.8;-51.0
+Restr;Mekelle;Normal;Moderate  ;CL;Medium;Restr_CL;Restr_Medium;Restr_Moderate  ;-53.3;-45.9
+Restr;Mekelle;Normal;Poor  ;CL;Medium;Restr_CL;Restr_Medium;Restr_Poor  ;-51.4;-46.5
+Restr;Mekelle;Normal;ANon limiting  ;CL;Short;Restr_CL;Restr_Short;Restr_ANon limiting  ;-52.9;-44.5
+Restr;Mekelle;Normal;Moderate  ;CL;Short;Restr_CL;Restr_Short;Restr_Moderate  ;-39.6;-32.0
+Restr;Mekelle;Normal;Poor  ;CL;Short;Restr_CL;Restr_Short;Restr_Poor  ;-35.9;-29.1
+Restr;Mekelle;Normal;ANon limiting  ;LS;Long;Restr_LS;Restr_Long;Restr_ANon limiting  ;-81.7;-80.6
+Restr;Mekelle;Normal;Moderate  ;LS;Long;Restr_LS;Restr_Long;Restr_Moderate  ;-80.6;-77.8
+Restr;Mekelle;Normal;Poor  ;LS;Long;Restr_LS;Restr_Long;Restr_Poor  ;-77.4;-73.8
+Restr;Mekelle;Normal;ANon limiting  ;LS;Medium;Restr_LS;Restr_Medium;Restr_ANon limiting  ;-81.7;-80.5
+Restr;Mekelle;Normal;Moderate  ;LS;Medium;Restr_LS;Restr_Medium;Restr_Moderate  ;-81.0;-78.2
+Restr;Mekelle;Normal;Poor  ;LS;Medium;Restr_LS;Restr_Medium;Restr_Poor  ;-75.0;-72.5
+Restr;Mekelle;Normal;ANon limiting  ;LS;Short;Restr_LS;Restr_Short;Restr_ANon limiting  ;-80.7;-79.8
+Restr;Mekelle;Normal;Moderate  ;LS;Short;Restr_LS;Restr_Short;Restr_Moderate  ;-75.3;-74.0
+Restr;Mekelle;Normal;Poor  ;LS;Short;Restr_LS;Restr_Short;Restr_Poor  ;-67.0;-64.5
+Restr;Mekelle;Normal;ANon limiting  ;S;Long;Restr_S;Restr_Long;Restr_ANon limiting  ;-12.6;-5.9
+Restr;Mekelle;Normal;Moderate  ;S;Long;Restr_S;Restr_Long;Restr_Moderate  ;-2.8;3.9
+Restr;Mekelle;Normal;Poor  ;S;Long;Restr_S;Restr_Long;Restr_Poor  ;4.3;7.0
+Restr;Mekelle;Normal;ANon limiting  ;S;Medium;Restr_S;Restr_Medium;Restr_ANon limiting  ;-10.8;-3.5
+Restr;Mekelle;Normal;Moderate  ;S;Medium;Restr_S;Restr_Medium;Restr_Moderate  ;-0.5;3.2
+Restr;Mekelle;Normal;Poor  ;S;Medium;Restr_S;Restr_Medium;Restr_Poor  ;-5.5;-3.4
+Restr;Mekelle;Normal;ANon limiting  ;S;Short;Restr_S;Restr_Short;Restr_ANon limiting  ;-14.7;-8.3
+Restr;Mekelle;Normal;Moderate  ;S;Short;Restr_S;Restr_Short;Restr_Moderate  ;-7.3;-2.1
+Restr;Mekelle;Normal;Poor  ;S;Short;Restr_S;Restr_Short;Restr_Poor  ;-3.9;-1.3
+RWH;Mekelle;Normal;ANon limiting  ;CL;Long;RWH_CL;RWH_Long;RWH_ANon limiting  ;47.4;36.9
+RWH;Mekelle;Normal;Moderate  ;CL;Long;RWH_CL;RWH_Long;RWH_Moderate  ;47.8;39.9
+RWH;Mekelle;Normal;Poor  ;CL;Long;RWH_CL;RWH_Long;RWH_Poor  ;22.0;16.2
+RWH;Mekelle;Normal;ANon limiting  ;CL;Medium;RWH_CL;RWH_Medium;RWH_ANon limiting  ;29.1;23.0
+RWH;Mekelle;Normal;Moderate  ;CL;Medium;RWH_CL;RWH_Medium;RWH_Moderate  ;18.6;15.1
+RWH;Mekelle;Normal;Poor  ;CL;Medium;RWH_CL;RWH_Medium;RWH_Poor  ;4.4;1.9
+RWH;Mekelle;Normal;ANon limiting  ;CL;Short;RWH_CL;RWH_Short;RWH_ANon limiting  ;1.3;0.8
+RWH;Mekelle;Normal;Moderate  ;CL;Short;RWH_CL;RWH_Short;RWH_Moderate  ;1.0;2.6
+RWH;Mekelle;Normal;Poor  ;CL;Short;RWH_CL;RWH_Short;RWH_Poor  ;-3.2;-1.9
+RWH;Mekelle;Normal;ANon limiting  ;LS;Long;RWH_LS;RWH_Long;RWH_ANon limiting  ;8.5;6.5
+RWH;Mekelle;Normal;Moderate  ;LS;Long;RWH_LS;RWH_Long;RWH_Moderate  ;5.4;3.0
+RWH;Mekelle;Normal;Poor  ;LS;Long;RWH_LS;RWH_Long;RWH_Poor  ;8.4;6.8
+RWH;Mekelle;Normal;ANon limiting  ;LS;Medium;RWH_LS;RWH_Medium;RWH_ANon limiting  ;8.2;6.3
+RWH;Mekelle;Normal;Moderate  ;LS;Medium;RWH_LS;RWH_Medium;RWH_Moderate  ;5.7;3.8
+RWH;Mekelle;Normal;Poor  ;LS;Medium;RWH_LS;RWH_Medium;RWH_Poor  ;3.3;2.3
+RWH;Mekelle;Normal;ANon limiting  ;LS;Short;RWH_LS;RWH_Short;RWH_ANon limiting  ;5.0;3.4
+RWH;Mekelle;Normal;Moderate  ;LS;Short;RWH_LS;RWH_Short;RWH_Moderate  ;2.4;0.6
+RWH;Mekelle;Normal;Poor  ;LS;Short;RWH_LS;RWH_Short;RWH_Poor  ;1.5;0.0
+RWH;Mekelle;Normal;ANon limiting  ;S;Long;RWH_S;RWH_Long;RWH_ANon limiting  ;152.9;106.7
+RWH;Mekelle;Normal;Moderate  ;S;Long;RWH_S;RWH_Long;RWH_Moderate  ;110.6;82.7
+RWH;Mekelle;Normal;Poor  ;S;Long;RWH_S;RWH_Long;RWH_Poor  ;67.5;48.7
+RWH;Mekelle;Normal;ANon limiting  ;S;Medium;RWH_S;RWH_Medium;RWH_ANon limiting  ;89.6;61.0
+RWH;Mekelle;Normal;Moderate  ;S;Medium;RWH_S;RWH_Medium;RWH_Moderate  ;55.3;41.1
+RWH;Mekelle;Normal;Poor  ;S;Medium;RWH_S;RWH_Medium;RWH_Poor  ;19.5;11.7
+RWH;Mekelle;Normal;ANon limiting  ;S;Short;RWH_S;RWH_Short;RWH_ANon limiting  ;28.8;18.9
+RWH;Mekelle;Normal;Moderate  ;S;Short;RWH_S;RWH_Short;RWH_Moderate  ;11.0;9.0
+RWH;Mekelle;Normal;Poor  ;S;Short;RWH_S;RWH_Short;RWH_Poor  ;3.8;1.3
+TAW+5;Mekelle;Normal;ANon limiting  ;CL;Long;TAW+5_CL;TAW+5_Long;TAW+5_ANon limiting  ;9.4;10.8
+TAW+5;Mekelle;Normal;Moderate  ;CL;Long;TAW+5_CL;TAW+5_Long;TAW+5_Moderate  ;1.4;5.2
+TAW+5;Mekelle;Normal;Poor  ;CL;Long;TAW+5_CL;TAW+5_Long;TAW+5_Poor  ;-5.6;0.7
+TAW+5;Mekelle;Normal;ANon limiting  ;CL;Medium;TAW+5_CL;TAW+5_Medium;TAW+5_ANon limiting  ;-3.7;2.5
+TAW+5;Mekelle;Normal;Moderate  ;CL;Medium;TAW+5_CL;TAW+5_Medium;TAW+5_Moderate  ;-2.3;4.9
+TAW+5;Mekelle;Normal;Poor  ;CL;Medium;TAW+5_CL;TAW+5_Medium;TAW+5_Poor  ;-7.0;-1.9
+TAW+5;Mekelle;Normal;ANon limiting  ;CL;Short;TAW+5_CL;TAW+5_Short;TAW+5_ANon limiting  ;-14.6;-7.8
+TAW+5;Mekelle;Normal;Moderate  ;CL;Short;TAW+5_CL;TAW+5_Short;TAW+5_Moderate  ;-9.8;-2.6
+TAW+5;Mekelle;Normal;Poor  ;CL;Short;TAW+5_CL;TAW+5_Short;TAW+5_Poor  ;-11.4;-5.7
+TAW+5;Mekelle;Normal;ANon limiting  ;LS;Long;TAW+5_LS;TAW+5_Long;TAW+5_ANon limiting  ;98.5;73.1
+TAW+5;Mekelle;Normal;Moderate  ;LS;Long;TAW+5_LS;TAW+5_Long;TAW+5_Moderate  ;104.1;78.8
+TAW+5;Mekelle;Normal;Poor  ;LS;Long;TAW+5_LS;TAW+5_Long;TAW+5_Poor  ;81.8;63.1
+TAW+5;Mekelle;Normal;ANon limiting  ;LS;Medium;TAW+5_LS;TAW+5_Medium;TAW+5_ANon limiting  ;87.6;66.4
+TAW+5;Mekelle;Normal;Moderate  ;LS;Medium;TAW+5_LS;TAW+5_Medium;TAW+5_Moderate  ;67.6;50.4
+TAW+5;Mekelle;Normal;Poor  ;LS;Medium;TAW+5_LS;TAW+5_Medium;TAW+5_Poor  ;44.9;32.1
+TAW+5;Mekelle;Normal;ANon limiting  ;LS;Short;TAW+5_LS;TAW+5_Short;TAW+5_ANon limiting  ;54.4;38.2
+TAW+5;Mekelle;Normal;Moderate  ;LS;Short;TAW+5_LS;TAW+5_Short;TAW+5_Moderate  ;36.5;25.4
+TAW+5;Mekelle;Normal;Poor  ;LS;Short;TAW+5_LS;TAW+5_Short;TAW+5_Poor  ;22.8;15.8
+TAW+5;Mekelle;Normal;ANon limiting  ;S;Long;TAW+5_S;TAW+5_Long;TAW+5_ANon limiting  ;-24.0;-23.0
+TAW+5;Mekelle;Normal;Moderate  ;S;Long;TAW+5_S;TAW+5_Long;TAW+5_Moderate  ;-23.4;-21.3
+TAW+5;Mekelle;Normal;Poor  ;S;Long;TAW+5_S;TAW+5_Long;TAW+5_Poor  ;-30.8;-26.1
+TAW+5;Mekelle;Normal;ANon limiting  ;S;Medium;TAW+5_S;TAW+5_Medium;TAW+5_ANon limiting  ;-31.7;-29.7
+TAW+5;Mekelle;Normal;Moderate  ;S;Medium;TAW+5_S;TAW+5_Medium;TAW+5_Moderate  ;-31.9;-27.2
+TAW+5;Mekelle;Normal;Poor  ;S;Medium;TAW+5_S;TAW+5_Medium;TAW+5_Poor  ;-37.6;-32.4
+TAW+5;Mekelle;Normal;ANon limiting  ;S;Short;TAW+5_S;TAW+5_Short;TAW+5_ANon limiting  ;-37.5;-32.7
+TAW+5;Mekelle;Normal;Moderate  ;S;Short;TAW+5_S;TAW+5_Short;TAW+5_Moderate  ;-28.4;-21.2
+TAW+5;Mekelle;Normal;Poor  ;S;Short;TAW+5_S;TAW+5_Short;TAW+5_Poor  ;-26.4;-20.1
+TAW-5;Mekelle;Normal;ANon limiting  ;CL;Long;TAW-5_CL;TAW-5_Long;TAW-5_ANon limiting  ;-20.9;-19.7
+TAW-5;Mekelle;Normal;Moderate  ;CL;Long;TAW-5_CL;TAW-5_Long;TAW-5_Moderate  ;-19.8;-19.0
+TAW-5;Mekelle;Normal;Poor  ;CL;Long;TAW-5_CL;TAW-5_Long;TAW-5_Poor  ;-13.2;-12.0
+TAW-5;Mekelle;Normal;ANon limiting  ;CL;Medium;TAW-5_CL;TAW-5_Medium;TAW-5_ANon limiting  ;-15.7;-14.7
+TAW-5;Mekelle;Normal;Moderate  ;CL;Medium;TAW-5_CL;TAW-5_Medium;TAW-5_Moderate  ;-11.7;-11.4
+TAW-5;Mekelle;Normal;Poor  ;CL;Medium;TAW-5_CL;TAW-5_Medium;TAW-5_Poor  ;-7.2;-7.6
+TAW-5;Mekelle;Normal;ANon limiting  ;CL;Short;TAW-5_CL;TAW-5_Short;TAW-5_ANon limiting  ;-12.0;-12.2
+TAW-5;Mekelle;Normal;Moderate  ;CL;Short;TAW-5_CL;TAW-5_Short;TAW-5_Moderate  ;-2.7;-3.6
+TAW-5;Mekelle;Normal;Poor  ;CL;Short;TAW-5_CL;TAW-5_Short;TAW-5_Poor  ;1.6;0.0
+TAW-5;Mekelle;Normal;ANon limiting  ;LS;Long;TAW-5_LS;TAW-5_Long;TAW-5_ANon limiting  ;-87.7;-86.0
+TAW-5;Mekelle;Normal;Moderate  ;LS;Long;TAW-5_LS;TAW-5_Long;TAW-5_Moderate  ;-87.0;-85.9
+TAW-5;Mekelle;Normal;Poor  ;LS;Long;TAW-5_LS;TAW-5_Long;TAW-5_Poor  ;-84.1;-81.6
+TAW-5;Mekelle;Normal;ANon limiting  ;LS;Medium;TAW-5_LS;TAW-5_Medium;TAW-5_ANon limiting  ;-88.4;-87.5
+TAW-5;Mekelle;Normal;Moderate  ;LS;Medium;TAW-5_LS;TAW-5_Medium;TAW-5_Moderate  ;-86.8;-85.0
+TAW-5;Mekelle;Normal;Poor  ;LS;Medium;TAW-5_LS;TAW-5_Medium;TAW-5_Poor  ;-83.0;-80.9
+TAW-5;Mekelle;Normal;ANon limiting  ;LS;Short;TAW-5_LS;TAW-5_Short;TAW-5_ANon limiting  ;-87.7;-87.1
+TAW-5;Mekelle;Normal;Moderate  ;LS;Short;TAW-5_LS;TAW-5_Short;TAW-5_Moderate  ;-83.8;-82.8
+TAW-5;Mekelle;Normal;Poor  ;LS;Short;TAW-5_LS;TAW-5_Short;TAW-5_Poor  ;-77.6;-75.7
+TAW-5;Mekelle;Normal;ANon limiting  ;S;Long;TAW-5_S;TAW-5_Long;TAW-5_ANon limiting  ;15.9;13.3
+TAW-5;Mekelle;Normal;Moderate  ;S;Long;TAW-5_S;TAW-5_Long;TAW-5_Moderate  ;21.3;18.9
+TAW-5;Mekelle;Normal;Poor  ;S;Long;TAW-5_S;TAW-5_Long;TAW-5_Poor  ;31.9;26.1
+TAW-5;Mekelle;Normal;ANon limiting  ;S;Medium;TAW-5_S;TAW-5_Medium;TAW-5_ANon limiting  ;18.9;15.1
+TAW-5;Mekelle;Normal;Moderate  ;S;Medium;TAW-5_S;TAW-5_Medium;TAW-5_Moderate  ;20.5;15.8
+TAW-5;Mekelle;Normal;Poor  ;S;Medium;TAW-5_S;TAW-5_Medium;TAW-5_Poor  ;15.6;11.7
+TAW-5;Mekelle;Normal;ANon limiting  ;S;Short;TAW-5_S;TAW-5_Short;TAW-5_ANon limiting  ;15.8;11.5
+TAW-5;Mekelle;Normal;Moderate  ;S;Short;TAW-5_S;TAW-5_Short;TAW-5_Moderate  ;9.0;5.8
+TAW-5;Mekelle;Normal;Poor  ;S;Short;TAW-5_S;TAW-5_Short;TAW-5_Poor  ;9.7;7.1
+W15;Mekelle;Normal;ANon limiting  ;CL;Long;W15_CL;W15_Long;W15_ANon limiting  ;-8.7;-8.8
+W15;Mekelle;Normal;Moderate  ;CL;Long;W15_CL;W15_Long;W15_Moderate  ;-10.8;-11.0
+W15;Mekelle;Normal;Poor  ;CL;Long;W15_CL;W15_Long;W15_Poor  ;-8.9;-9.6
+W15;Mekelle;Normal;ANon limiting  ;CL;Medium;W15_CL;W15_Medium;W15_ANon limiting  ;-10.1;-10.7
+W15;Mekelle;Normal;Moderate  ;CL;Medium;W15_CL;W15_Medium;W15_Moderate  ;-10.1;-10.4
+W15;Mekelle;Normal;Poor  ;CL;Medium;W15_CL;W15_Medium;W15_Poor  ;-10.7;-12.1
+W15;Mekelle;Normal;ANon limiting  ;CL;Short;W15_CL;W15_Short;W15_ANon limiting  ;-11.3;-11.8
+W15;Mekelle;Normal;Moderate  ;CL;Short;W15_CL;W15_Short;W15_Moderate  ;-10.7;-11.5
+W15;Mekelle;Normal;Poor  ;CL;Short;W15_CL;W15_Short;W15_Poor  ;-10.1;-11.1
+W15;Mekelle;Normal;ANon limiting  ;LS;Long;W15_LS;W15_Long;W15_ANon limiting  ;-8.2;-7.7
+W15;Mekelle;Normal;Moderate  ;LS;Long;W15_LS;W15_Long;W15_Moderate  ;-10.1;-10.6
+W15;Mekelle;Normal;Poor  ;LS;Long;W15_LS;W15_Long;W15_Poor  ;-11.2;-11.6
+W15;Mekelle;Normal;ANon limiting  ;LS;Medium;W15_LS;W15_Medium;W15_ANon limiting  ;-9.4;-9.2
+W15;Mekelle;Normal;Moderate  ;LS;Medium;W15_LS;W15_Medium;W15_Moderate  ;-10.7;-11.3
+W15;Mekelle;Normal;Poor  ;LS;Medium;W15_LS;W15_Medium;W15_Poor  ;-11.2;-11.3
+W15;Mekelle;Normal;ANon limiting  ;LS;Short;W15_LS;W15_Short;W15_ANon limiting  ;-11.7;-11.8
+W15;Mekelle;Normal;Moderate  ;LS;Short;W15_LS;W15_Short;W15_Moderate  ;-11.5;-12.2
+W15;Mekelle;Normal;Poor  ;LS;Short;W15_LS;W15_Short;W15_Poor  ;-11.6;-12.1
+W15;Mekelle;Normal;ANon limiting  ;S;Long;W15_S;W15_Long;W15_ANon limiting  ;-8.7;-9.4
+W15;Mekelle;Normal;Moderate  ;S;Long;W15_S;W15_Long;W15_Moderate  ;-9.4;-9.8
+W15;Mekelle;Normal;Poor  ;S;Long;W15_S;W15_Long;W15_Poor  ;-10.2;-12.5
+W15;Mekelle;Normal;ANon limiting  ;S;Medium;W15_S;W15_Medium;W15_ANon limiting  ;-8.9;-9.2
+W15;Mekelle;Normal;Moderate  ;S;Medium;W15_S;W15_Medium;W15_Moderate  ;-9.3;-10.5
+W15;Mekelle;Normal;Poor  ;S;Medium;W15_S;W15_Medium;W15_Poor  ;-10.7;-10.9
+W15;Mekelle;Normal;ANon limiting  ;S;Short;W15_S;W15_Short;W15_ANon limiting  ;-9.1;-9.3
+W15;Mekelle;Normal;Moderate  ;S;Short;W15_S;W15_Short;W15_Moderate  ;-10.7;-11.4
+W15;Mekelle;Normal;Poor  ;S;Short;W15_S;W15_Short;W15_Poor  ;-10.4;-11.6
+W30;Mekelle;Normal;ANon limiting  ;CL;Long;W30_CL;W30_Long;W30_ANon limiting  ;-17.9;-18.0
+W30;Mekelle;Normal;Moderate  ;CL;Long;W30_CL;W30_Long;W30_Moderate  ;-22.8;-24.1
+W30;Mekelle;Normal;Poor  ;CL;Long;W30_CL;W30_Long;W30_Poor  ;-21.6;-21.9
+W30;Mekelle;Normal;ANon limiting  ;CL;Medium;W30_CL;W30_Medium;W30_ANon limiting  ;-20.5;-21.3
+W30;Mekelle;Normal;Moderate  ;CL;Medium;W30_CL;W30_Medium;W30_Moderate  ;-21.5;-22.0
+W30;Mekelle;Normal;Poor  ;CL;Medium;W30_CL;W30_Medium;W30_Poor  ;-21.8;-23.7
+W30;Mekelle;Normal;ANon limiting  ;CL;Short;W30_CL;W30_Short;W30_ANon limiting  ;-22.8;-23.9
+W30;Mekelle;Normal;Moderate  ;CL;Short;W30_CL;W30_Short;W30_Moderate  ;-21.9;-23.4
+W30;Mekelle;Normal;Poor  ;CL;Short;W30_CL;W30_Short;W30_Poor  ;-20.9;-23.2
+W30;Mekelle;Normal;ANon limiting  ;LS;Long;W30_LS;W30_Long;W30_ANon limiting  ;-19.3;-18.9
+W30;Mekelle;Normal;Moderate  ;LS;Long;W30_LS;W30_Long;W30_Moderate  ;-23.9;-25.3
+W30;Mekelle;Normal;Poor  ;LS;Long;W30_LS;W30_Long;W30_Poor  ;-21.9;-23.2
+W30;Mekelle;Normal;ANon limiting  ;LS;Medium;W30_LS;W30_Medium;W30_ANon limiting  ;-18.1;-18.5
+W30;Mekelle;Normal;Moderate  ;LS;Medium;W30_LS;W30_Medium;W30_Moderate  ;-23.1;-23.8
+W30;Mekelle;Normal;Poor  ;LS;Medium;W30_LS;W30_Medium;W30_Poor  ;-23.3;-24.3
+W30;Mekelle;Normal;ANon limiting  ;LS;Short;W30_LS;W30_Short;W30_ANon limiting  ;-23.1;-23.5
+W30;Mekelle;Normal;Moderate  ;LS;Short;W30_LS;W30_Short;W30_Moderate  ;-23.7;-24.7
+W30;Mekelle;Normal;Poor  ;LS;Short;W30_LS;W30_Short;W30_Poor  ;-22.4;-23.1
+W30;Mekelle;Normal;ANon limiting  ;S;Long;W30_S;W30_Long;W30_ANon limiting  ;-17.7;-18.9
+W30;Mekelle;Normal;Moderate  ;S;Long;W30_S;W30_Long;W30_Moderate  ;-21.1;-22.5
+W30;Mekelle;Normal;Poor  ;S;Long;W30_S;W30_Long;W30_Poor  ;-21.5;-22.8
+W30;Mekelle;Normal;ANon limiting  ;S;Medium;W30_S;W30_Medium;W30_ANon limiting  ;-18.3;-19.1
+W30;Mekelle;Normal;Moderate  ;S;Medium;W30_S;W30_Medium;W30_Moderate  ;-19.8;-21.8
+W30;Mekelle;Normal;Poor  ;S;Medium;W30_S;W30_Medium;W30_Poor  ;-21.1;-21.4
+W30;Mekelle;Normal;ANon limiting  ;S;Short;W30_S;W30_Short;W30_ANon limiting  ;-18.9;-19.9
+W30;Mekelle;Normal;Moderate  ;S;Short;W30_S;W30_Short;W30_Moderate  ;-21.7;-22.9
+W30;Mekelle;Normal;Poor  ;S;Short;W30_S;W30_Short;W30_Poor  ;-21.2;-22.2

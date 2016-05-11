@@ -1,0 +1,103 @@
+% This file illustrates how to create the full cover page 'manually'. Normally
+% this should only be done on Windows systems as on Linux/MacOS, the generation
+% of the cover page is fully automated via the 'make cover' or
+% 'python3 run.py cover' command. 
+% 
+% Changes should only be made between the markers '%%% COVER: Settings %%%' and
+% '%%% COVER: End settings %%%' (these could/should be copy/pasted from
+% thesis.tex).
+
+\documentclass[cam,cover]{adsphd}
+
+\usepackage{printlen}
+\uselengthunit{mm}
+
+%%% COVER: Settings %%%
+\title{Hydrological impacts on the carbon dynamics of large tropical river systems}
+%\subtitle{Multiscale computing for Dummies}
+
+\author{Naomi}{Geeraert}
+
+\supervisor{Prof.~Steven~Bouillon}{}
+\supervisor{Prof.~Gerard~Govers}{}
+\supervisor{Prof.~Okke~Batelaan}{}
+%\cosupervisor{Prof.~dr.~ir.~S.Leader}{}
+\president{Prof.~Martin~Hermy}
+\jury{Prof.~Roel~Merckx\\
+      Prof.~Gert~Verstraeten
+}
+\externaljurymember{Dr.~Paolo~Paron}{UNESCO-IHE}
+\externaljurymember{Prof.~Jack~Middelburg}{Universiteit Utrecht}
+
+\phddegree{Bioscience Engineering} % "Doctor of ..."
+\faculty{Faculty of Bioscience Engineering}
+\department{Department of Earth and Environmental Sciences}
+
+% Your research group within the department
+% e.g. iMinds-DistriNet, Scientific Computing Group, ...
+\researchgroup{Division of Soil and Water Management}
+\website{http://www.ees.kuleuven.be} % Leave empty to hide
+\email{naomi.geeraert@ees.kuleuven.be} % Leave empty to hide
+
+\address{Celestijnenlaan 200E}
+% \addresscity{B-3001 Leuven} % This is the default value. Note
+                              % that 'B-3001 Heverlee' is _incorrect_!!
+                              % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
+
+\date{December 2015}
+\copyyear{2015}
+%\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
+%\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
+                         % automatically)
+%\isbn{XXX-XX-XXXX-XXX-X}
+
+
+% Set spine width:
+\setlength{\adsphdspinewidth}{9mm}
+
+%% Set bleeds
+%\setlength{\defaultlbleed}{7mm}
+%\setlength{\defaultrbleed}{7mm}
+
+% Set custom cover page
+% \setcustomcoverpage{mycoverpage.tex} % mycoverpage.tex is the default
+
+%%% COVER: End settings %%%
+
+% Compute total page width
+\newlength{\fullpagewidth}
+\setlength{\fullpagewidth}{2\adsphdpaperwidth}
+\addtolength{\fullpagewidth}{2\defaultlbleed}
+\addtolength{\fullpagewidth}{2\defaultrbleed}
+\addtolength{\fullpagewidth}{\adsphdspinewidth}
+
+\geometry{
+	paperwidth=\fullpagewidth,
+	paperheight=\adsphdpaperheight,
+}
+
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\makefullcoverpage{\adsphdspinewidth}{}
+
+\newlength{\testje}
+\setlength{\testje}{10mm}
+
+\mbox{}
+\newpage
+\subsection*{Used settings:}
+\begin{itemize}
+	\item Spine width: \printlength{\adsphdspinewidth}
+	\item Left bleed: \printlength{\lbleed}
+	\item Right bleed: \printlength{\rbleed}
+	\item Paper width: \printlength{\adsphdpaperwidth}
+	\item Paper height: \printlength{\adsphdpaperheight}
+	\item Text width: \printlength{\textwidth}
+	\item Text height: \printlength{\textheight}
+\end{itemize}
+
+\end{document}

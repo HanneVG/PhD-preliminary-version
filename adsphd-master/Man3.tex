@@ -1,0 +1,396 @@
+\documentclass{article}
+%\documentclass[pagebackref,showlabels,biblatex,biber,biblatexstyle=authoryear]{adsphd}
+%\documentclass[croppedpdf,pagebackref,showinstructions]{adsphd}
+%\documentclass[online]{adsphd}
+%\documentclass[print]{adsphd}
+
+% To use biblatex:
+%\documentclass[biblatex,biber,biblatexstyle=authoryear,showinstructions,showlabels]{adsphd}
+
+% Preamble {{{}{
+\usepackage{caption}
+\captionsetup{font=footnotesize}
+\DeclareCaptionLabelFormat{adja-page}{#1 #2 \emph{(cont.)}}
+
+\usepackage[style = authoryear-comp, sorting = nyt, sortcites = false, backend=biber, 
+				maxcitenames=2, mincitenames=1, maxbibnames=99,
+				firstinits=true, uniquename=false, uniquelist=false,dashed=false]{biblatex}
+
+\usepackage[english,dutch]{babel}
+%\DeclareLanguageMapping{english}{english-apa}
+
+% Specify the .bib file
+\addbibresource{D:/Naomi/articles/bibtex/libraryJab.bib}
+\renewcommand*{\nameyeardelim}{,\space}
+\PassOptionsToPackage{sortcites=true}{biblatex}
+\PassOptionsToPackage{uniquename=false}{biblatex}
+%\PassOptionsToPackage{firstinits=true}{biblatex}
+\PassOptionsToPackage{uniquelist=false}{biblatex}
+%\PassOptionsToPackage{maxnames=99}{biblatex}
+%\PassOptionsToPackage{maxcitenames=2}{biblatex}
+
+%\usepackage{microtype}
+%\DisableLigatures{encoding = *,family = *}
+%
+%\usepackage{pdfpages}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\LARGE\bf\sffamily\raggedright}{\chaptertitlename \vspace{1pt} \thechapter}{5pt}{\huge}
+\titlespacing{\chapter} {0pt}{0pt}{20pt}
+
+%
+\usepackage{siunitx}
+\sisetup{separate-uncertainty=true, load-configurations = abbreviations, range-units=single,multi-part-units=single}
+\DeclareSIUnit\year{yr}
+\DeclareSIUnit\PgC{PgC}
+\DeclareSIUnit\tC{tC}
+\DeclareSIUnit\perthou{\textperthousand}
+\DeclareSIUnit\ppm{ppm}
+\DeclareSIUnit\keV{keV}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\mrl{(m river length)}
+\DeclareSIUnit\coeq{(CO_2 eq.)}
+\DeclareSIUnit\meq{meq}
+\DeclareSIUnit\molair{M}
+
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+
+\usepackage{csquotes}
+
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array} 
+\setlength{\extrarowheight}{1pt}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{ltablex}
+
+
+\usepackage{pdflscape}
+
+%\pgfplotstableset{% global config, for example in the preamble
+		%% these columns/<colname>/.style={<options>} things define a style
+		%% which applies to <colname> only.
+		%every head row/.style={before row=\toprule,after row=\midrule},
+		%every last row/.style={after row=\bottomrule}
+		%}
+%
+%\usepackage{verbatim}
+%
+
+
+\usepackage{nomencl}   % For nomenclature
+\usepackage[toc]{glossary} % For list of abbreviations
+% To avoid problems, do NOT change the layout of the following two
+% commands
+\let\printglossaryorig\printglossary
+\renewcommand{\printglossary}{%
+  \renewcommand{\glossaryname}{\glossname}
+  \cleardoublepage%
+  \printglossaryorig\chaptermark{\glossname}}
+
+
+% Bibtex style
+%\bibstyle{abbrv}
+%\bibstyle{acm}
+%\bibstyle{ieeetr}
+
+% Own commands
+\InputIfFileExists{defs}{}{} % defs.tex, contains own preamble settings
+\newcommand{\COtwo}{$CO_2$}
+\newcommand{\dCDOC}{$\delta^{13}C_{DOC}\,$}
+\newcommand{\dCDIC}{$\delta^{13}C_{DIC}\,$}
+\newcommand{\dCPOC}{$\delta^{13}C_{POC}\,$}
+\newcommand{\dC}{$\delta^{13}C\,$}
+\newcommand{\dOHO}{$\delta^{18}O_{H_2O}\,$}
+
+% }{}}}  <-- Preamble
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Contrasting carbon dynamics in a tropical river system (Tana River, Kenya) between flooded and non-flooded wet seasons }\label{ch:processes}\chaptermark{Carbon dynamics}
+
+\section*{Abstract}
+Rivers are transporters of sediment and carbon from the continents to the ocean, whereby the magnitude and timing of these fluxes depend on the hydrological regime. We studied the sediment and carbon dynamics of a tropical river system at two sites along the lower Tana River (Kenya), separated by a \SI{385}{\km} stretch characterized by extensive floodplains. Sampling took place during three different wet seasons from 2012 to 2014, whereby extensive flooding was observed during one of the campaigns. We measured the concentration of sediment, the concentration and isotopic signature of three different carbon species (particulate and dissolved organic carbon, POC and DOC, and dissolved inorganic carbon, DIC) and other auxiliary parameters. During the non-flooded seasons, the total C flux was dominated by POC (\SIrange{57}{72}{\percent}) and there was a downstream decrease of the total C flux. DIC was the dominant species during the flooded season (\SIrange{56}{67}{\percent}) and the flux of DIC and DOC coming from the inundated floodplains between both sites resulted in a downstream increase of the total carbon flux. Finally, we constructed a conceptual framework for the carbon dynamics in river systems, whereby nine major fluxes were identified. The application of this framework on the fluxes over the three different wet seasons clearly visualised the dominance of POC during the non-flooded seasons and the large outgassing during the flooded season. Furthermore, it identified the exchange of POC with the floodplain as a sensitive factor to close the carbon budget of the river.
+
+\section{Introduction}
+Changes in the fluxes of carbon (C) between different reservoirs (i.e., atmosphere, ocean, and the terrestrial domain) are at the foundation of the climate change debate \parencite{Denman2007}. Inland aquatic ecosystems such as rivers and lakes form one of the connections between these three C pools. Initial representations of the global C cycle considered rivers as inactive pipelines, delivering organic and inorganic C from the land to the ocean \parencite[e.g.][]{Denman2007}. However, it is now well established that processing and transformation of terrestrial C also takes place during transport in the river systems \parencite{Cole2007, Battin2009, Tranvik2009, Aufdenkampe2011}, up to the point that rivers are now considered to be global hotspots for $CO_2$ fluxes to the atmosphere \parencite{Raymond2013}. The global annual C flux from land to inland waters is assessed at \SIrange{2.7}{5.7}{\PgC\per\year}, while the delivery to the ocean is estimated at \SI{0.9}{\PgC\per\year} \parencite{Aufdenkampe2011, Regnier2013, Wehrli2013}. This means that only one third to one sixth of the terrestrial C effectively reaches the oceans, while the other part is attributed to efflux to the atmosphere (\SIrange{1.2}{4.2}{\PgC\per\year}) or to burial in aquatic sediments (\SI{0.6}{\PgC\per\year}) \parencite{Aufdenkampe2011, Regnier2013, Wehrli2013}.
+
+The amendments in global riverine flux estimates in recent years are partly associated with the increasing amount of data that became available about tropical rivers and wetlands. For a long time, the Amazon river system was the main representative for tropical rivers due to a scarcity of data on other systems \parencite[e.g.][]{Richey2002, Mayorga2005, Ellis2012}. However, in recent years, the C dynamics in other tropical river systems has received more attention. Several surveys and monitoring campaigns have been conducted on the African continent and the datasets now span a broad range of river systems, from very large systems such as the Congo, Zambezi and Niger rivers \parencite{Coynel2005, Bouillon2012, Spencer2012, Wang2013, Zurbrugg2013, Lambert2015, Teodoru2015}, to smaller systems such as the Athi-Galana-Sabaki and Tana rivers in Kenya \parencite{Tamooh2012a, Tamooh2014, Marwick2014a}, the Betsiboka and Rianila basins in Madagascar \parencite{Marwick2014}, and the Comoé, Bia and Tanoé rivers in Ivory Coast \parencite{Kone2010}. In Asia, there are examples of C research in large rivers such as the Godavari River in India \parencite{Sarin2002} and the Mekong River \parencite{Zhao2015}, while others focussed on small Chinese rivers \parencite{Zhou2013}. Research on riverine C was also done in tropical areas of Oceania, with some studies concentrating on large river systems such as the Strickland and Fly rivers in Papua New Guinea whereas other focused on small catchments in Australia \parencite{Bass2013a, Bass2013}.
+
+Some studies discussed above are longitudinal studies, i.e. the downstream variation in river C transport and outgassing was monitored over a relatively short time period by researchers travelling up or down the river, while other studies were based on monthly or bi-weekly sampling.  While these studies have allowed to better constrain global fluxes from river systems,   they do not allow to fully capture the dynamics of C fluxes in such complex systems. Tropical rivers often show strong seasonality in discharge and strong inter-annual variability. The effects of seasonality cannot be fully captured by monthly or even bi-weekly sampling as strong variations may occur over very short time spans \parencite{Syvitski2014}. Furthermore, the relationships between C concentrations and discharge may be  different during rising and falling stages, and tipping points may exist, such as the initiation of flooding, whereby different processes are activated. A high temporal sampling resolution is required to capture these variations and to uncover the patterns in those fluxes as well as the interconnections between the different processes affecting C transport and outgassing in a river system. As tropical rivers also show a high inter-annual variability such campaigns should ideally cover several years.
+
+A particular point of interest here is the fact that the connectivity between lowland rivers and their floodplains varies throughout the year, with important consequences for material fluxes between the main river and its floodplain as well as for downstream transport \parencite{Tweed2015}. For example, local primary production in Amazonian floodplain lakes has been identified as an important source of labile organic matter to the main river, but the floodplains are at the same time a sink for organic matter during the rising water period \parencite{Moreira2013}. The interaction between temporary flooded areas and the main river is also known to exert an important control on the delivery of organic C, both in dissolved and particulate form \parencite{Pettit2011, Moreira2013, Mora2014}, as well as on greenhouse gas fluxes from the river system to the atmosphere \parencite{Abril2014a, Teodoru2015}. Several studies suggest that  the efflux of $CO_2$ from rivers to the atmosphere is likely to a large extent supported by C which was already mineralised on land or in floodplains and which entered the river as $CO_2$, while the in-situ mineralisation of terrestrial organic carbon in large rivers is relatively less important \parencite{Abril2014a, Borges2015, Hotchkiss2015, Tweed2015}.
+
+These studies clearly illustrate that the river carbon system is characterised by strong seasonal variations and that the interaction between the floodplain and the river plays an important role in this dynamics.  However, many of the studies that were hitherto carried out focused on a single component of the river-floodplain carbon system. A better understanding of the relative role of different components requires the collection of high-resolution data allowing to quantify the various C fluxes (both within the river and between the river and the atmosphere) so that a modelling framework can be developed that describes how these different components interact.
+ 
+The objectives of our study are therefore twofold. First, we report on an extensive dataset where suspended sediment as well as C concentrations (dissolved and particulate organic C, dissolved inorganic C) and supporting parameters were measured at a daily resolution during three wet season sampling campaigns, at two sites located upstream and downstream of an extensive stretch of the Tana River (Kenya), characterized by the presence of floodplains. Secondly, we use the information from this unique dataset to propose a framework for further analysis of the C dynamics in tropical river systems. This framework combines C transport fluxes and C fluxes which result from biogeochemical processes which are often discussed as the single focus of research: exchange with the floodplain, primary production, weathering, efflux to the atmosphere and mineralisation of POC and DOC. We will assess these fluxes for each of the campaigns in order to apply this framework on the Tana River.
+
+We consider the Tana River as an ideal study area, as it comprises a relatively large river system ($>$ \SI{1000}{\km} in length), which experiences a pronounced seasonality in discharge, resulting in two wet seasons per year. Moreover, the river segment under consideration (approximately \SI{385}{\km} between our two sampling points) has no permanent tributaries and relative little human disturbance, so that downstream variations can be ascribed to within-river C processing and/or interactions between the river and the floodplain. Previous work in both the wider catchment and the lower Tana River has already pointed out the importance of the floodplain-fringed lower river in regulating sediment and C transport further downstream \parencite{Bouillon2009, Tamooh2012a, Tamooh2013a, Tamooh2014}.
+
+\section{Materials and methods}
+\subsection{Study area and time frame}
+The Tana River ($\sim$ \SI{1100}{\km}), located in the south-eastern part of Kenya, has a catchment area of $\sim$ \SI{95500}{\km\squared} (\autoref{fig:ch4_map}). The upper catchment ($\sim$ \SI{25}{\percent} of the area) is characterized by the high altitudes of the Aberdare Mountain Range ($\sim$ \SI{3500}{\m}), Mount Kenya ($\sim$ \SI{5200}{\m}) and the Nyambene Hills ($\sim$ \SI{2500}{\m}). Many tributaries are draining the hillslopes in the upper catchment. The vegetation of the upper catchment consists, along an altitudinal gradient, of open tree vegetation and rain fed agriculture in the lower areas, dense forest at higher altitude and moorlands/grasslands in the highest areas. Five reservoirs for the production of hydro-electricity were constructed at altitudes between \SI{1055}{\m} and \SI{700}{\m}, of which Masinga Reservoir, with a surface area of \SI{125}{\km\squared}, is the largest. When the altitude of the river drops below \SI{250}{\m}, the river starts to meander through an extended and vegetated floodplain. From here on, no permanent tributaries are present and the vegetation outside of the floodplain consists of arid savannah. Downstream of Garsen, the river forms a deltaic system before it drains into the Indian Ocean.
+
+\begin{figure}
+\includegraphics[width=120mm]{fig1_map_procL.png}
+\caption{The Tana River basin with the indication of the two sampling sites, Garissa and Garsen, along the Lower Tana River.}
+\label{fig:ch4_map}
+\end{figure}
+
+The discharge in the lower Tana River depends mainly on the precipitation in the upper catchment as the annual rainfall in the mountains can reach \SI{1800}{\mm\per\year}, while it is less than \SI{400}{\mm\per\year} around Garissa. Two wet seasons, associated with the monsoons, occur from April to June (long wet season) and from October to December (short wet season). Inter-annual variability in rainfall is very high, as for example in Embu (at an elevation of ca. \SI{1500}{\m}), the standard deviation on the annual rainfall (\SI{431}{\mm}) is almost half of the annual average rainfall (\SI{1001}{\mm}) (World Bank Climate Variability Tool, 2015).
+
+Sampling took place in the lower Tana River at the bridges in Garissa and Garsen (\autoref{fig:ch4_map}). The river length between the sites is approximately \SI{385}{\km}, which corresponds to a water travel time of ca. 5 days during non-flooded conditions based on the difference in timing of discharge peaks. This is consistent with a measured average water speed of \SI{1.29 (25)}{\m\per\second} at Garissa (n=11) and \SI{1.14 (23)}{\m\per\second} at Garsen (n=25). Three sampling campaigns with concurrent daily measurements in both sites were carried out for a period of 37, 52, and 45 days, respectively, during the short wet season in 2012 (October-November), and the long wet seasons in 2013 (May-June) and 2014 (April-May). The campaign in 2012 covered the first half of the wet season and the discharge in Garissa was characterized by sharp, distinct peaks and ranged between \SI{87}{\m\cubed\per\second} and  \SI{588}{\m\cubed\per\second} (\autoref{fig:ch4_OC}a). This pattern was dampened downstream in Garsen, with discharge ranging from \SIrange{108}{268}{\m\cubed\per\second}. During the campaign of 2013, the falling limb of the hydrograph was sampled, whereby the discharge was decreasing from \SIrange{768}{128}{\m\cubed\per\second} and from \SIrange{579}{136}{\m\cubed\per\second} in Garissa and Garsen, respectively. Consequently, flooding conditions occurred during the first part of the sampling period. In 2014, the wet season experienced only two minor discharge peaks up to \SI{282}{\m\cubed\per\second} upstream and \SI{171}{\m\cubed\per\second} downstream.
+
+These sampling periods captured three distinctive river conditions i.e. low water, high water without flooding and high water with flooding. The last 17 days of the campaign in 2014  were representative for dry (D, n=17) conditions, with very low discharges similar to those observed throughout the dry season. The data of 2012 and the first 28 days of 2014 were combined to form the wet non-flooded dataset (W-NF, n=65) as discharges were significantly higher than those observed during the dry season with discharge peaks up to \SI{500}{\m\cubed\per\second} lasting several days, but no flooding occurred in these periods. In 2013, the entire recession phase of a significant flooding event was monitored and the whole monitoring period will represent the wet flooded conditions (W-F, n=52).
+ 
+In the analysis and discussion of our data, we will identify the contrasts in concentrations between these different river conditions, and we will also consider the inter-annual variations (i.e. differences between the different sampling campaigns) of the carbon fluxes. 
+
+\subsection{Sampling and analysis}
+The water height was recorded on a stage board mounted on a bridge pillar. Rating curves for the conversion of water height to discharge were constructed for each location based on discharge measurements with an Acoustic Doppler Current Profiler (ADCP, Teledyne RDI RiverRay). On a measuring day, ADCP measurements were repeated at least 4 times so that an accuracy of at least \SI{5}{\percent} with respect to the average discharge was obtained. 
+
+Grab water samples were taken daily with a Niskin sampler or bucket in the middle of the river. Temperature, pH and conductivity were measured with a multimeter (YSI Professional Plus). Calibration of the pH probe was based on NBS buffers (NBS4 and NBS7). Dissolved oxygen was measured with a YSI ProODO, calibrated on water-saturated air. Measurements of the total suspended matter (TSM) load were obtained by filtering \SIrange{200}{250}{\milli\liter} of water on pre-weighed, pre-combusted (\SI{4}{\hour} at \SI{450}{\celsius}) Whatman GF/F filters (\SI{47}{\mm}; pore size: \SI{0.7}{\micro\m}). They were air-dried in the field and later oven-dried (\SI{50}{\celsius}) in the lab before re-weighing.
+
+A volume of $\sim$\SI{25}{\milli\liter} water was filtered for later determination of particulate organic carbon (POC), particulate nitrogen (PN) and stable C isotope signatures (\dC) of POC on pre-combusted \SI{25}{\mm} Whatman GF/F filters (pore size: \SI{0.7}{\micro\m}). The filters were air-dried in the field and oven-dried (\SI{50}{\celsius}) before further analysis. Inorganic C was removed from the filters by exposing them to $HCl$ fumes in a dessicator. Subsequently, the dried filters were packed in $Ag$ cups for analysis on an elemental analyser - isotope ratio mass spectrometer (EA-IRMS, ThermoFinnigan Flash HT and Delta V Advantage). The signal of the thermal conductivity detector (TCD) of the elemental analyzer was used for quantifying the concentrations of PN, while the m/z 44, 45, 46 signal on the IRMS was used for determining POC and \dCPOC. Calibrations for the concentrations were based on acetanilide standards. Sucrose (IAEA-C6, \dC=\SI{-10.4}{\perthou}) and acetanilide (\dC=\SI{-27.65}{\perthou}) were used for the calibration of \dC data. Reproducibility of the \dC measurements was typically better than \SI{0.2}{\perthou}. POC/PN ratios are reported as mass/mass ratios.
+
+Water samples for dissolved organic carbon (DOC) and \dCDOC were pre-filtered on \SI{47}{\mm} pre-combusted GF/F filters and subsequently filtered with \SI{0.2}{\micro\m} syringe filters. The samples were stored in glass vials with Teflon-coated screw caps and \SI{50}{\micro\liter} of $H_3PO_4$ was added for preservation. Analysis of DOC and \dCDOC was performed on a  wet oxidation TOC-analyzer (IO Analytical Aurora 1030W) coupled with an isotope ratio mass spectrometer (ThermoFinnigan DeltaV Advantage). Calibrations were based on a 2-point calibration (IAEA-C6, \dC=\SI{-10.4}{\perthou} and an internal sucrose standard, dC=\SI{-26.99}{\perthou}). Based on replicates of the standards, the error on the concentration measurements was less than \SI{3}{\percent} and the standard deviation on the \dC measurements better than \SI{0.2}{\perthou}.
+
+Samples for \dCDIC were taken by gently overfilling \SI{12}{\milli\liter} glass headspace vials and poisoning them with \SI{20}{\micro\liter} $HgCl$. Prior to analysis, a helium headspace was created in the vials and $\sim$\SI{300}{\micro\liter} of $H_3PO_4$ was added. After overnight equilibration, $\sim$ \SI{1}{\milli\liter} of headspace was injected into the He flow of an EA-IRMS (ThermoFinnigan Flash HT and Delta V Advantage). The results were corrected for isotopic equilibration between the dissolved $CO_2$ and the gaseous $CO_2$ \parencite{Gillikin2007}. Calibration of the measurements was done by certified reference material LSVEC (\dC=\SI{-46.6}{\perthou}) and IAEA-CO-1 (\dC=\SI[retain-explicit-plus]{+2.492}{\perthou}). 
+
+The $pCO_2$ of the water was measured in the field with a headspace technique \parencite{Teodoru2009, Abril2015} on a Li-Cor LI-820 gas analyzer. Three replicate syringes were filled with \SI{30}{\milli\liter} of water and \SI{30}{\milli\liter} of air with known $pCO_2$ (either ambient air, or $CO_2$-free air obtained by pumping air through a chemical $CO_2$ trap), and were shaken for 2 minutes to equilibrate. Subsequently, the headspace was injected in the gas analyzer. Afterwards, the concentration in the water was calculated based on Henry’s law and taking into account the $pCO_2$ of the headspace gas before and after equilibration, temperature and the ambient pressure. Total alkalinity (TA) samples were pre-filtered on a pre-combusted GF/F filter. Following filtration at \SI{0.2}{\micro\meter} with a syringe filter, the samples were stored in HDPE bottles. Analysis was done by automated electro-titration on \SI{50}{\milli\liter} samples with \SI{0.1}{\mol\per\liter} $HCl$ as titrant. Based on replicates, the reproducibility is estimated better than \SI{\pm 3}{\micro\mol\per\kg}. The total dissolved inorganic carbon (DIC) concentrations were calculated from $pCO_2$ and TA measurements by using the thermodynamic constants for freshwater from Millero (1979) in CO2SYS \parencite{Lewis1998}.
+
+Community respiration rates were determined by measuring the decrease of dissolved oxygen in the dark over time. Therefore, at least 9 glass bottles with stoppers were gently overfilled with river water, and the dissolved oxygen concentration of 4 bottles was measured immediately with an optical sensor (YSI ProODO). The remaining bottles were stored in a cooler box filled with river water to maintain ambient temperature, and dissolved $O_2$ concentrations were measured after $\sim$ \SI{24}{\hour}. To take into account that complex molecules require more oxygen to oxidise organic matter, the $O_2$ consumption is divided by a respiratory oxidation ration ($O_2$:$C$) of 1.3 in order to have $CO_2$ equivalent respiration rates \parencite{Richardson2013}.
+
+In 2013 and 2014, samples for major elements ($Ca^{2+}$, $Mg^{2+}$ and $Si^{4+}$)  were taken every other day by filtering water on \SI{47}{\mm} pre-combusted GF/F filters, followed by filtration on \SI{0.2}{\micro\m} syringe filters. No preservation was added in the field, but samples were acidified with ultrapure $HNO_3$ prior to analysis by inductively coupled plasma mass spectrometry (ICP-MS, Agilent 7700x).
+
+\subsection{Flux calculations}\label{sec:flux_calc}
+
+The aforementioned measurements of C concentrations and auxiliary parameters allow us to quantify different C fluxes. First, longitudinal fluxes transport C in and out the river section at the up--and downstream boundary in the form of POC, DOC and DIC by the river water. The lateral flux caused by weathering in the floodplain can be quantified based on the longitudinal fluxes of the major elements. A second lateral flux exists between the DIC pool in the river and the atmosphere, caused by outgassing of the excess $CO_2$. Finally, the observations also allowed to calculate the internal flux of C from the OC pool to the DIC due to respiration.
+
+The C transfer between different pools in the river due to respiration and between the river and the atmosphere can only be approximated based on the point-measurement data. Therefore, the fluxes over the whole river stretch are initially calculated based on the data from each of the sampling sites separately. The average value of those will provide a realistic value of the total flux but is based on the assumption that the fluxes vary linearly between both sites. The differences between the estimates based on the individual sites will provide more insight in the spatial variation of those fluxes.
+
+\paragraph{Longitudinal fluxes}
+To calculate the longitudinal fluxes of sediment and C over the three observation periods in each sampling site, data gaps had to be filled. Single day gaps in discharge (n=2), TSM (n=4) and DIC (n=2) were filled by averaging the values of the surrounding days. Larger gaps in the POC measurements  (n=8) were filled based on a linear regression between all TSM and POC measurements of the respective campaign and location. As no systematic pattern could be detected in DOC and DIC values, missing values in DOC (n=22) and a large gap in DIC values (n=19) were filled by randomly picking values from a uniform distribution within the limits of \SIrange{1.0}{4.0}{\milli\g\per\liter} and \SIrange{13.6}{14.2}{\milli\g\per\liter} for DOC and DIC, respectively.  
+Daily fluxes were calculated by multiplying the daily discharge with the daily concentration of the sediment or C species. Fluxes over each campaign were obtained by summing the daily fluxes. Monte Carlo simulation was used for the error analysis, whereby a random value was picked out of a uniform distribution within a \SI{\pm 15}{\percent} range of the observed value for discharge (based on the observed scatter around the regression line of the discharge rating curve) and within \SI{\pm 5}{\percent} of the observed value for all concentration measurements (based on the accuracy of the measurements). The calculation of the seasonal fluxes was repeated 1000 times with randomized discharge and concentration and the standard deviation on those values is representative for the accuracy of the fluxes.
+
+\paragraph{Lateral fluxes}
+ The C influx due to carbonate weathering can be calculated from the difference in $Ca^{+2}$ and $Mg^{2+}$ fluxes at the upstream and downstream end of the section as two bicarbonate anions are produced for each Ca or Mg cation that is formed $[(Ca,Mg)CO_3 + CO_2 + H_2O => (Ca^{2+}, Mg^{2+}) + 2 HCO_3^-]$. For Si weathering, the $HCO_3^-$ will increase with one mole per mole increase of DSi.
+
+As the concentrations of $Ca^{+2}$, $Mg^{2+}$ and dissolved Si (Dsi) were measured every other day in 2013 and 2014, the flux of those elements on days without measurement was calculated based on linear regressions between the discharge and the daily flux of each element, with separate regression lines for each site and each year (4 regressions per element). 
+
+In order to integrate the estimated $CO_2$ exchange between the river water and the atmosphere, a river surface area had to be determined. Measurements with the ADCP at Garissa and Garsen indicated that the width of the river varied with ca. \SI{10}{\percent} between high and low discharge. Because of the limited information about either minimum or maximum surface area and the small changes relative to the uncertainties associated with the flux per square meter, we used a simplification and assumed a constant river surface area which did not change with discharge. The surface area is based on manual delineation in Google Earth, and resulted in a total area of \SI{38.5}{\km\squared}, which is equivalent to an average river width of \SI{100}{\m}. This methodology also implies that during flooding, only outgassing from the main river channel was taken into account for the outgassing estimates. 
+
+The $CO_2$ flux is calculated as: 
+\begin{equation}
+F_{CO_2}=K_{600}*\text{solubility coefficient}*(pCO_{2(water)}-pCO_{2(atm)})
+\label{eq:ch4_FCO2}
+\end{equation}
+
+Whereby
+\begin{equation}
+\begin{split}
+K_{600}= V*S*2841 \pm 107+2.02 \pm 0.209	\\
+V=0.19*Q^{0.29}
+\end{split}
+\label{eq:ch4_raymonds}
+\end{equation}
+
+$F_{CO_2}$ is the water-air flux of $CO_2$ (\si{\milli\mol\per\m\squared\per\hour}), $K_{600}$ the gas transfer velocity (\si{\m\per\day}) according to table 2 model equation 5 proposed by \textcite{Raymond2012}, the solubility coefficient of $CO_2$ in water (\si{\mol\per\m\cubed\per\atm}) is calculated based on the water temperature and the salinity, $V$ is the water velocity (\si{\m\per\s}) according to eq. 6 in \textcite{Raymond2012}, $S$ is the slope and $Q$ the discharge (\si{\m\cubed\per\s}). Constant values were used for the slope (0.001), the $pCO_2$ of the atmosphere (\SI{385}{\ppm}), and the salinity (0), while the other variables were measured in the field. Daily fluxes over the whole river stretch were calculated by multiplying $F_{CO_2}$ with the area. The daily flux of days with missing $pCO_2$ data was calculated by linear interpolation between the discharge and the daily flux during the respective season and location. The seasonal flux was then again obtained by summing of the daily fluxes. 
+
+\paragraph{Internal flux}
+Measured community respiration rates were integrated over the total volume of water between the two sampling sites. Because the travel time of the water is approximately 5 days, the total volume in Garissa was calculated based on the daily discharge of the day of measuring and the discharge of the 4 preceding days. In Garsen, the day of measurement and the 4 subsequent days were taken into account. The volumes at each site were multiplied with the $CO_2$ equivalent respiration rate of that day and a seasonal estimate of the flux of OC to DIC due to respiration was obtained by summing the daily fluxes.
+
+\section{Results}
+\subsection{Total suspended matter and particulate organic carbon}
+During the non-flooded conditions, the TSM concentration increased with each discharge peak (\autoref{fig:ch4_OC}b), with values up to \SI{5730}{\mg\per\liter} and \SI{7300}{\mg\per\liter} in Garissa and Garsen, respectively. Comparatively low concentrations were observed under flooded conditions, with  maximum concentrations of \SI{1480}{\mg\per\liter} in Garissa and \SI{920}{\mg\per\liter} in Garsen. During the dry conditions,  concentrations were relatively low, ranging between 215 and \SI{660}{\mg\per\liter} in Garissa, but significantly higher in Garsen (\SIrange{480}{1000}{\mg\per\liter}).
+
+\begin{figure}
+\includegraphics[width=120mm]{fig2_OC_proc.png}
+\caption{Time series of: (a) discharge, (b) total suspended matter, (c) particulate organic carbon concentration, (d) mass percent of organic carbon in the total suspended matter ({\%}OC), and (e) dissolved organic carbon concentration. The different flow conditions are indicated above the graphs, whereby the two non-flooded wet periods were combined during the calculations.}
+\label{fig:ch4_OC}
+\end{figure}
+
+A similar pattern was visible in the POC concentrations (\autoref{fig:ch4_OC}b). The maximum concentration under non-flooded conditions was \SI{125.4}{\mg\per\liter} in Garissa and \SI{100.6}{\mg\per\liter} in Garsen, in contrast to the flooded conditions with maximum concentrations of \SI{15.2}{\mg\per\liter} and \SI{10.5}{\mg\per\liter} respectively. Average concentrations during dry conditions were \SI{5.3}{\mg\per\liter} at Garissa and \SI{9.1}{\mg\per\liter} at Garsen.
+
+At each site, the concentrations of TSM and POC were significantly correlated with the discharge for each of the different flow conditions (Pearson correlation, $p<0.01$). The concentration of TSM was significantly different between the two sites during dry and non-flooded wet conditions, while the concentration of POC was significantly different only during the dry season (paired t-test with 5 days time lag, $p<0.01$). The concentrations of both TSM and POC under flooded conditions were not significantly different between both sites (paired t-test with 5 days time lag, $p>0.05$). The three different conditions were at each site significantly different from each other (unpaired t-test, $p<0.01$).
+
+The percentage of organic C in the suspended matter load ({\%}OC) did not show distinct temporal variations related to discharge, except in 2013 in Garissa (\autoref{fig:ch4_OC}d). The average {\%}OC in Garissa was \SI{1.6(2)}{\percent}, \SI{1.8(4)}{\percent} and \SI{1.6(4)}{\percent} for the three different conditions (dry, non-flooded, flooded) and was, for each of the flow conditions, significantly higher (paired t-test, $p<0.05$) than the average {\%}OC in Garsen, which averaged \SI{1.3(2)}{\percent}, \SI{1.4(3)}{\percent} and \SI{1.3(2)}{\percent}, respectively. POC/PN ratios were also fairly constant during each season, with average values of \num{6.2(3)}, \num{7.8(15)} and \num{10.0(7)} in Garissa during dry, non-flooded and flooded conditions. This corresponds with average values in Garsen of \num{7.3(7)}, \num{8.3(14)} and \num{8.5(6)}, which were for all conditions significantly different in Garissa and Garsen.
+
+\subsection{Dissolved organic and inorganic carbon, dissolved oxygen and respiration}
+DOC concentrations were significantly correlated with discharge (Pearson correlation, $p<0.01$) during flooded conditions, while the correlation was weak or absent during dry and non-flooded conditions (\autoref{fig:ch4_OC}e). During the dry and flooded conditions, DOC concentrations were higher downstream, while during the non-flooded wet conditions, they were higher upstream.  Although those differences in concentration were significant between both sites (paired t-test with 5 days time lag, $p<0.01$), they were generally limited, except for wet flooded conditions, when average DOC concentration was more than double in Garsen. Average concentrations in Garissa were \SI{1.8(4)}{\mg\per\liter}, \SI{2.9(11)}{\mg\per\liter} and \SI{1.6(3)}{\mg\per\liter} during dry, non-flooded and flooded conditions, respectively, and \SI{2.3(3)}{\mg\per\liter}, \SI{2.6(6)}{\mg\per\liter} and \SI{3.8(11)}{\mg\per\liter} in Garsen during dry, non-flooded and flooded conditions, respectively.
+
+The concentration of DIC increased during each discharge peak under non-flooded conditions (\autoref{fig:ch4_IC}b) leading to maximum concentrations up to \SI{1873}{\milli\mol\per\liter}. During the flooded state, DIC was relatively stable in Garissa with concentrations between \SI{1130}{\milli\mol\per\liter} and \SI{1224}{\milli\mol\per\liter}, while in Garsen, DIC concentrations were much higher at the beginning of the recession phase and declined steadily from \SI{2188}{\milli\mol\per\liter} to \SI{1340}{\milli\mol\per\liter}. The downstream concentrations were during all periods significantly higher than in the upstream site (paired t-test with 5 days time lag, $p<0.01$). 
+
+\begin{figure}
+\includegraphics[width=120mm]{fig3_IC_proc.png}
+\caption{Time series of: (a) discharge, (b) dissolved inorganic carbon concentrations, (c) $pCO_2$, (d) dissolved oxygen saturation levels, and (e) respiration rates. The different flow conditions are indicated above the graphs, whereby the two non-flooded wet periods were combined during the calculations.}
+\label{fig:ch4_IC}
+\end{figure}
+
+The trends in $pCO_2$ (\autoref{fig:ch4_IC}c) were similar to those observed in DIC concentrations, with a range of \SIrange{889}{1435}{\ppm}, \SIrange{433}{2442}{\ppm} and \SIrange{778}{975}{\ppm} in Garissa during dry, non-flooded and flooded conditions, respectively. Significantly higher values were observed in Garsen during both wet conditions, but not during the dry conditions, with ranges of \SIrange{863}{1169}{\ppm}, \SIrange{836}{3800}{\ppm} and \SIrange{845}{6016}{\ppm} during dry, non-flooded and flooded conditions, respectively. The saturation level of dissolved oxygen in the water showed the opposite trend (\autoref{fig:ch4_IC}d): during the dry period, the oxygen saturation (expressed in \%) varied between \SI{94}{\percent} and \SI{97}{\percent} at both sites. Minimum oxygen saturation levels in Garissa were \SI{72}{\percent} and \SI{88}{\percent} during the non-flooded and flooded conditions, while this was \SI{65}{\percent} and \SI{42}{\percent} in Garsen.
+
+Respiration rates were correlated with discharge (Pearson correlation, $p<0.05$, $r= 0.35-0.50$), except during the dry periods (\autoref{fig:ch4_IC}e). Average respiration rates in Garissa in dry, non-flooded and flooded conditions were 2.6, 3.5 and \SI{1.7}{\micro\mol\coeq\per\liter\per\hour}, while this was significantly lower (paired t-test with 5 days time lag, $p<0.01$) in Garsen with average rates of 0.5, 0.9 and \SI{0.8}{\micro\mol\coeq\per\liter\per\hour}. 
+
+The average of the local $CO_2$ flux calculated by \autoref{eq:ch4_FCO2} was during the dry conditions significantly higher in Garissa (\SI{2.9}{\milli\mol\per\meter\squared\per\hour}) than in Garsen (\SI{2.2}{\milli\mol\per\meter\squared\per\hour}) based on a paired t-test with 5 days time lag ($p<0.01$). During both wet conditions, the $CO_2$ flux was higher in Garsen with average values of \SI{3.9}{\milli\mol\per\meter\squared\per\hour} during the non-flooded conditions and \SI{8.2}{\milli\mol\per\meter\squared\per\hour} during flooding, as opposed to \SI{3.1}{\milli\mol\per\meter\squared\per\hour} and \SI{1.9}{\milli\mol\per\meter\squared\per\hour} in Garissa (paired t-test with 5 days time lag, $p<0.01$).  
+
+\subsection{Stable isotope signatures of different C pools}
+No clear temporal trends were visible in the \dCPOC data (\autoref{fig:ch4_d13C}b), and values were not significantly different between the two sites during the dry and flooded conditions, while they were significantly higher in Garissa during the non-flooded wet periods (paired t-test with 5 days time lag, $p<0.01$). Averages over all conditions ranged between \SI{-22.8(6)}{\perthou} and \SI{-22.2(7)}{\perthou}. The \dCDOC was significantly different between both sites during the wet conditions (paired t-test with 5 days time lag, $p<0.01$), with lower values in Garsen during the non-flooded state (\SI{-22.6(13)}{\perthou} vs. \SI{-23.9(11)}{\perthou}) and higher values in Garsen during the flooded state (\SI{-23.7(7)}{\perthou} vs. \SI{-22.8(11)}{\perthou}, \autoref{fig:ch4_d13C}c). 
+
+\begin{figure}
+\includegraphics[width=120mm]{fig4_d13C_proc.png}
+\caption{Time series of: (a) discharge, (b) \dCPOC, (c) \dCDOC, and (d) \dCDIC. The conditions are indicated above the graphs, whereby the two non-flooded wet periods were combined during the calculations.}
+\label{fig:ch4_d13C}
+\end{figure}
+
+The DIC became depleted in $^{13}C$ when the DIC concentration was increasing (\autoref{fig:ch4_d13C}d). \dCDIC ranged at both sites between \SI{-8.4}{\perthou} and \SI{-7.2}{\perthou} during dry conditions. At Garissa, \dCDIC varied between \SI{-13.9}{\perthou} and \SI{-6.4}{\perthou} during non-flooded conditions and between \SI{-9.9}{\perthou} and \SI{-7.5}{\perthou} during flooding. In Garsen, the range during non-flooded conditions was from \SI{-13.1}{\perthou} to \SI{-7.1}{\perthou}, while lower \dC values, between \SI{-14.7}{\perthou} and \SI{-9.0}{\perthou}, were measured during flooded conditions.
+
+\subsection{Major element concentrations}
+Major elements were compared according to the campaigns (2013 vs. 2014) and not according to the discharge conditions because there were no measurements in 2012.
+
+The concentrations of $Ca^{2+}$ and $Mg^{2+}$ were significantly interrelated, and both correlated with TA (Pearson correlation, p<0.01), but not with discharge, except in Garsen in 2013 (\autoref{fig:ch4_elem}). The concentration of both elements was significantly higher downstream in Garsen compared to Garissa (unpaired t-test, $p<0.01$), as the average $Ca^{2+}$ concentrations over all measurements were \SI{328(40)}{\micro\mol} and \SI{407(41)}{\micro\mol} in Garissa and Garsen, respectively and \SI{141(16)}{\micro\mol} and \SI{177(28)}{\micro\mol}, respectively, for $Mg^{2+}$.
+
+\begin{figure}
+\includegraphics[width=100mm]{fig5_elem_proc.png}
+\caption{Concentration of the elements related to weathering in function of TA.}
+\label{fig:ch4_elem}
+\end{figure}
+
+There was a negative correlation between discharge and DSi (Pearson correlation, $p<0.05$), except in Garissa in 2013. Furthermore, there was no correlation between TA and DSi, except in 2013 at Garsen (Pearson correlation, $p<0.05$, \autoref{fig:ch4_elem}). No significant difference was observed between the two sites. The average concentration over all measurements was \SI{259(21)}{\micro\mol} in Garissa and \SI{260(15)}{\micro\mol} in Garsen, while the overall range was from \SIrange{208}{317}{\micro\mol}.
+
+\subsection{Fluxes}
+The longitudinal, lateral and within-river fluxes were calculated for each of the individual sampling campaigns. When comparing fluxes between sampling campaigns, the different lengths of the sampling periods has to be kept in mind. The total discharge of the non-flooded campaigns showed that the wet season in 2014 was very weak, as the total discharge was less than in 2012, despite the 8 extra days of sampling (\autoref{fig:ch4_seasF}a). The total water flux decreased between Garissa and Garsen with \SI{24}{\percent} and \SI{2}{\percent} in respectively 2012 and 2014. The total water flux during the flooded season in 2013 was almost threefold those of the non-flooded seasons. There was also a \SI{5}{\percent} downstream increase of total water flux over the observed period.
+
+\begin{figure}
+\includegraphics[width=100mm]{fig6_seasF_proc.png}
+\caption{Fluxes of water (a), sediment (b) and carbon (c) during the three campaigns at both sites. The numbers in the carbon plot represent the fraction (in \si{\percent}) of each carbon species relative to the total carbon flux. The number of days over which the fluxes are calculated, are indicated by n.}
+\label{fig:ch4_seasF}
+\end{figure}
+
+The trend was partly different for the TSM flux (\autoref{fig:ch4_seasF}b, \autoref{tab:ch4_seasFluxes}), with a larger TSM flux in 2012 compared to 2014. However, in 2012, a lot of deposition of sediment took place (a loss of \SI{30}{\percent}), while during the campaign in 2014, the suspended sediment flux increased with \SI{29}{\percent} between the two sites. The sediment flux in 2013 was relatively low, despite the much larger water flux and the longer measuring time. In 2013, the relative decrease of TSM flux between the sites was \SI{34}{\percent}, which was similar to decrease in 2012.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Fluxes of sediment and carbon at both locations (GSA: Garissa, GSN: Garsen) during the three measuring campaigns (2012, 2013, 2014). The error indicates one standard deviation based on the Monte Carlo simulation.}
+    \begin{tabular}{l r r r}
+    \toprule
+          & \multicolumn{1}{r}{GSA 2012} & \multicolumn{1}{r}{GSA 2013} & \multicolumn{1}{r}{GSA 2014} \\
+    \midrule
+    TSM (\si{\mega\tonne}) & 1.52  $\pm$ 0.05 & 1.14   $\pm$ 0.02 & 0.68   $\pm$ 0.02 \\
+    POC (\SI{e3}{\tonne}) & 28.28  $\pm$ 0.84 & 13.56  $\pm$ 0.32 & 12.6   $\pm$ 0.16 \\
+    DOC (\SI{e3}{\tonne}) & 2.19   $\pm$ 0.03 & 2.39   $\pm$ 0.04 & 1.27   $\pm$ 0.02 \\
+    DIC (\SI{e3}{\tonne}) & 8.83   $\pm$ 0.22 & 19.9   $\pm$ 0.32 & 7.16   $\pm$ 0.07 \\
+		 \midrule
+		& \multicolumn{1}{r}{GSN 2012} & \multicolumn{1}{r}{GSN 2013} & \multicolumn{1}{r}{GSN 2014} \\
+		 \midrule
+		TSM (\si{\mega\tonne})  & 1.04   $\pm$ 0.01 & 0.75   $\pm$ 0.01 & 0.88   $\pm$ 0.02 \\
+    POC (\SI{e3}{\tonne}) & 17.36  $\pm$ 0.32 & 9.76   $\pm$ 0.13 & 11.65  $\pm$ 0.26 \\
+    DOC (\SI{e3}{\tonne}) & 1.24   $\pm$ 0.03 & 6.41   $\pm$ 0.11 & 1.14   $\pm$ 0.02 \\
+    DIC (\SI{e3}{\tonne}) & 8.81   $\pm$ 0.11 & 32.87  $\pm$ 0.53 & 7.54   $\pm$ 0.11 \\
+
+    \bottomrule
+    \end{tabular}%
+  \label{tab:ch4_seasFluxes}%
+\end{table}%
+
+
+The longitudinal flux of total C showed also a downstream decreasing trend during the non-flooded seasons (\autoref{fig:ch4_seasF}c, \autoref{tab:ch4_seasFluxes}). This can mainly be attributed to a decrease in POC, which was the dominant fraction (between 57 and \SI{72}{\percent}). DOC was the smallest fraction, ranging between 4 and \SI{6}{\percent} of the total C flux. The difference in DIC fluxes between both stations was very limited during both non-flooded seasons (\SI{0}{\percent} in 2012 and \SI[retain-explicit-plus]{+5}{\percent} in 2014). The contrast with the flooded season, both in terms of magnitude and relative contribution of the different pools, was very clear (\autoref{fig:ch4_seasF}c, \autoref{tab:ch4_seasFluxes}). POC followed the pattern of TSM, which was a relative small and decreasing flux. DIC was the dominant C pool transported during the flooded season, accounting for \SI{56}{\percent} and \SI{67}{\percent} of the longitudinal total C flux at Garissa and Garsen. Both longitudinal fluxes of DIC and DOC increased significantly downstream, by \SI{154}{\percent} and \SI{64}{\percent} respectively. As a result, the longitudinal total C flux in Garsen was \SI{36}{\percent} higher than upstream in Garissa. 
+
+The combined longitudinal flux of $Ca^{2+}$ and $Mg^{2+}$ was in both seasons increasing between Garissa and Garsen, which indicates that carbonate weathering was taking place (\autoref{fig:ch4_Fproc}a). During the non-flooded season of 2014, the increase in ($Ca^{2+}$+$Mg^{2+}$) flux was 15 Mmol, which means that a lateral flux of \SI{30}{\mega\mol} of $HCO_3^-$ (DIC) was transferred from the floodplain to the river. This was much larger during the flooded season, as the ($Ca^{2+}$+$Mg^{2+}$) flux increased with \SI{324}{\mega\mol}, resulting in an increase in $HCO_3^-$ (DIC) of \SI{649}{\mega\mol}. The  longitudinal DSi flux increased downstream with \SI{14}{\mega\mol} in 2013, while the difference in fluxes was negligible (\SI{0.4}{\mega\mol}) in 2014.
+
+\begin{figure}
+\includegraphics[width=120mm]{fig7_Fproc_proc2.png}
+\caption{Flux of $Ca^{2+}$+$Mg^{2+}$ (a), flux from OC to DIC due to respiration (b) and outgassing (c) over the three measuring campaigns, whereby the latter two are either calculated based on measurements only at Garissa (GSA) or Garsen (GSN). The number of days over which the fluxes are calculated, are indicated by n. Note the same axis-scale in (b) and (c) for easy comparison.}
+\label{fig:ch4_Fproc}
+\end{figure}
+
+The within-river flux from OC to DIC due to total aquatic community respiration was much larger when it was calculated using the measurements in Garissa compared to calculations based on the measurements in Garsen (\autoref{fig:ch4_Fproc}b). The true value is expected to be somewhere in between, depending on the gradient in respiration rates between the sites . The respiration during the flooded season was relatively less important in Garissa compared to the non-flooded seasons as the order of magnitude of the flux over the 52 days flux was similar to the flux in 2012 with only 37 days. 
+
+In contrast to respiration, estimated $CO_2$ efflux was larger based on the measurements downstream than upstream in Garissa (\autoref{fig:ch4_Fproc}c). In Garissa, the production of DIC by respiration is always larger than the outgassing of $CO_2$, while in Garsen the outgassing is larger than the production of DIC by respiration. The very high outgassing during the flooded season at Garsen indicates the importance of flooding. 
+
+\section{Discussion}
+In the discussion, we first focus on the changes in C concentrations between dry and non-flooded wet conditions. Subsequently, we discuss the contrast between the flooded and non-flooded wet seasons. The insight from those discussions will lead to the construction of a conceptual framework for the C dynamics in rivers and it will be illustrated by an attempt to close the C budget for the Tana River during the three campaigns.
+
+\subsection{Trends in C dynamics during the dry and non-flooded seasons}
+\paragraph{Particulate organic carbon}
+In response to a discharge peak, the POC concentration increased rapidly, caused by the fast mobilisation of sediment with increasing discharge. The relationship between TSM and discharges varies with flow conditions due to a complex interplay between discharge, sediment storage and sediment (re-)mobilisation \parencite{Geeraert2015}, and a similar dynamics appears to regulating the POC, due to the strong correlation between the POC concentration and the concentration of suspended matter. 
+ 
+During earlier monthly monitoring campaigns, a significant correlation was found between \dCPOC and discharge, whereby the POC was more depleted in $^{13}C$ during the dry seasons \parencite{Tamooh2014}. This relationship was not observed during our campaigns, probably because (1) the major variation in \dCPOC in the monthly dataset occurred at low discharge which was less common in our dataset, and (2) the larger range in \dCPOC at high discharge in our dataset due to more observations in that discharge range erased the strong correlation which was seen in that range in the monthly dataset. Otherwise, it is also likely that a seasonal pattern in \dCPOC exists which is not present in short-term discharge variations. In any case, the isotope signature does not provide information on whether the POC is derived from a different origin throughout the different phases of a wet season.
+
+The upstream POC flux was significantly higher than the flux downstream during both non-flooded campaigns, indicating that a considerable amount of POC was stored or mineralised between the two sites. To obtain a first estimate of the deposition of POC, we assumed that it was deposited or mobilised to the same extent as the suspended sediment load (i.e. a similar fraction of the incoming riverine flux is deposited or mobilised), which resulted in an estimated POC deposition of \SI{8372}{\tonne} over the campaign in 2012 and a mobilization of \SI{3693}{\tonne} in the campaign of 2014. This approach inherently assumes that the contribution of OC to the total TSM load (i.e., {\%}POC) is constant. The decrease in POC fluxes between the two sites which is not explained by the deposition flux can then be attributed to mineralization, and was estimated at \SI{1367}{\tonne} in 2012 and \SI{4642}{\tonne} in 2014. The relatively high amount in 2014 was due to the mobilisation of TSM and, based on our previous assumptions, also of POC. The importance of POC mineralization, but also the weakness of the assumptions, were apparent from the {\%}POC data, which were generally lower in the downstream site as the seasonal averages of the {\%}POC which were \SI{1.6}{\percent} and \SI{1.3}{\percent} in the dry period and \SI{1.8}{\percent} and \SI{1.4}{\percent} under non-flooded wet conditions for Garissa and Garsen, respectively. Mineralization of POC does not necessarily take place within the river itself, but could also have occurred during the deposition/remobilization cycle of POC in the floodplain or river bed.
+
+In other tropical river systems, such as the Amazon, Oubangui, Apure, Caura and Orinoco rivers, a clear exponential relationship has been found between {\%}POC and TSM concentrations with high {\%}POC during low turbidity (\SI{<10}{\mg\liter}) and low {\%}OC during high sediment concentrations \parencite{Bouillon2012, Moreira2013, Mora2014}. This type of relationship was not visible in our dataset, as all the TSM measurements exceeded \SI{500}{\mg\liter} and thus resulting in highly turbid water. 
+
+\paragraph{Dissolved organic carbon}
+DOC is the least important C pool in terms of longitudinal fluxes, with a share in the total C flux of \SIrange{4}{6}{\percent} during the non-flooded seasons. However, the importance of the DOC is not based on its magnitude but on its reactivity. Incubation experiments in 2013 and 2014 have shown that in 14 out of 18 experiments, at least \SI{10}{\percent} of the DOC was respired within the first 24-48 hours \parencite{Geeraert2015}, suggesting that a significant fraction of DOC is respired and replenished dynamically within the river system, and implying that the magnitude of DOC mineralization cannot be assessed based solely on comparing absolute DOC fluxes upstream and downstream of the study area.
+
+To close the carbon budget of the Tana River in wet non-flooded conditions, it is important to identify the source of this labile DOC. Groundwater and photochemical production are reported to be a source of DOC to rivers \parencite{Kieber2006, Bauer2011}. Yet, both sources would result in dilution of the concentration during discharge peaks as the water volume increases proportionally much more than the areas of groundwater inflow or water surface. As dilution of DOC was not observed in our datasets, those inputs are unlikely the main source of DOC, unless it is compensated for by other simultaneous mechanisms. Another possible source is the degradation of POC. However, with the increase in POC during discharge peaks, one would assume a proportional increase in DOC concentration, except if other factors limit the DOC production in abundance of POC. So based on our dataset, we haven’t yet been able to draw conclusions about a source for the DOC in non-flooded conditions.
+
+\paragraph{Dissolved inorganic carbon}
+The Tana River was at elevated water levels highly oversaturated in $CO_2$ with $pCO_2$ values up to \SI{2000}{\ppm} in Garissa and \SI{3800}{\ppm} in Garsen, compared to the atmospheric concentrations which were expected to be around \SI{385}{\ppm}. During lower discharge, the water is only slightly oversaturated (\SIrange{700}{800}{\ppm}). The measured $pCO_2$ values were lower than the estimate of median $pCO_2$ for tropical rivers and streams by \textcite{Aufdenkampe2011}, which are respectively 3600 and \SI{4300}{\ppm}. Only during discharge peaks, these high values are reached. Even though the river was a constant source of $CO_2$ to the atmosphere, it appears to be important to take the lower $CO_2$ levels during low water levels into account when making generalizations.
+ 
+Two processes are responsible for the net production of DIC: (1) respiration of organic material and (2) weathering of carbonates. Indications for the respiration of OM were the simultaneous increase in $pCO_2$ and decrease in dissolved oxygen when DIC concentrations rose during discharge peaks. The stable C isotope signature of the DIC during low water levels ($\sim$ \SI{-8}{\perthou}) is close to the signature measured on the inorganic C fraction of floodplain soils (\SIrange{-4}{-8}{\perthou}, own unpublished data). However, the isotope signature of the DIC became more depleted during discharge peaks, indicating that a larger fraction of DIC was derived from respiration of organic C. The significantly higher flux of $Ca^{2+}$ and $Mg^{2+}$ in Garsen was, on the other hand, a strong indicator that carbonate weathering was taking place between both sites. 
+
+No significant increase in DSi was observed implying that silicate weathering in the lower Tana River is limited. The application of a 2-end member mixing scenario, with end members originating from weathering (\SI{-7}{\perthou}), based on measurements of IC in the floodplain) and respiration (\SI{-21}{\perthou}), based on the isotope signature of the mineralised DOC during incubation experiments \parencite{Geeraert2015}, indicate that the contribution of respiration is below \SI{10}{\percent} during low discharge, but can increase up to \SI{50}{\percent} during periods of high discharge .
+
+\subsection{Changes in the carbon dynamics due to overbank flooding}
+Flooding was found to exert a strong impact on the C transport fluxes between Garissa and Garsen. While the total C flux decreased during non-flooded season, there was an increase of \SI{36}{\percent} of the total C flux under flooded conditions. The changes can be further analysed by examining the  particulate fraction and the dissolved fractions separately.
+
+During periods of overbank flooding, POC concentrations were very low despite the very high discharge. This can be related to the reduction of TSM concentrations to which the POC is strongly coupled and which has been explained by a depletion or stabilization of sediment in the river bed \parencite{Geeraert2015}. In the time series of TSM, POC and \dCPOC, there is a tipping point whereby the values are initially higher in Garissa than in Garsen, but then become lower (\autoref{fig:ch4_OC}). The opposite is true for the {\%}POC. This suggests the presence of different pools of POC in the floodplain that are either retained or released during periods of inundation or retreat of the floodwaters. The resulting flux of POC is low in both sites compared to the fluxes of the non-flooded seasons (which had a lower total discharge and fewer observation days) and the POC is no longer the dominant C species. 
+
+The fluxes of the dissolved C species at Garissa were in 2013 already much higher than during the non-flooded seasons of 2012 and 2014. Those fluxes even increased strongly downstream, with \SI{64}{\percent} and \SI{154}{\percent} for DIC and DOC, respectively. As the most extensive flooding took place between both sites, it is clear that the inundated floodplain acted as a source for DOC and DIC to the river. The importance of the floodplain can also be deduced from the very high $pCO_2$ and TA levels and very low DO(\si{\percent}) and \dCDIC downstream of the floodplain. It has been demonstrated for river systems such as the Amazon, Zambezi and Congo rivers, that flooded soils, wetlands and flooded vegetation are indeed a direct input for dissolved C and greenhouse gasses such as $CO_2$ \parencite{Mayorga2005, Zurbrugg2013, Abril2014a, Teodoru2014, Borges2015}. 
+
+\subsection{Conceptual framework for carbon fluxes in tropical rivers}
+Our observations clearly show that downstream fluxes of C within river systems are strongly changing through both in-situ processes and through interactions with boundaries such as ground- and floodwaters and the atmosphere. A visual representation of the order of magnitude of the different fluxes would be instructive to elucidate the differences between the different seasons. Therefore, we propose a conceptual framework that illustrates the key processes which should be quantified or constrained in order to understand C dynamics along a river stretch (\autoref{fig:ch4_flowchart}). This framework can be used as a basis for more quantitative flux assessments under different conditions and to develop a biogeochemical model. We consider three C pools in the river POC, DOC and DIC, whereby C can be transferred from one pool to the other, and interactions between the riverine C and two external pools (the atmosphere and the floodplain).
+
+\begin{figure}
+\includegraphics[width=120mm]{fig8_flowchart_proc_v3.png}
+\caption{Conceptual framework representing the main carbon fluxes in the lower Tana River system.}
+\label{fig:ch4_flowchart}
+\end{figure}
+ 
+Below, we discuss the main processes which  drive the fluxes of C between different riverine C species and external pools (floodplain-atmosphere). These processes occur simultaneously over the entire river stretch.
+\begin{description}
+	\item [(1) and (2)] The input and output for each C species is the foundation of the framework. As the calculations of these longitudinal fluxes do not require many assumptions, and given the high temporal sampling resolution of our study, the uncertainty on these estimates is relatively low. The calculation method for these fluxes in the Tana river is explained previously in section 2.3.
+	\item [(3)] POC, which is strongly linked to the suspended matter load, is subjected to deposition and resuspension cycles. Our method of TSM measurements was not able to differentiate between the overall deposition and overall resuspension, but resulted in a net flux, which can be either towards or away from the river. To estimate the magnitude of these fluxes, we assumed that the POC was strongly bound to the TSM and therefore the POC was exchanged with the floodplain in the same relative proportion as the change in TSM. We thereby presume that there are no other processes which reduce the mass of the TSM and that the {\%}OC is constant over the whole stretch. Our measurements of {\%}OC show that the latter assumption is not entirely valid, as there is a slight downstream decrease of ca. \SI{0.4}{\percent} in {\%}OC, so our deposition/resuspension estimate is likely a minor overestimation.
+	\item [(4)] photosynthesis in the water column will transfer C from the DIC pool to the POC pool. Although primary production rates at the water surface of the lower Tana were on average \SI{1.1}{\micro\mol\per\liter} during the wet season campaign \parencite{Tamooh2013}, this flux can be ignored relative to the uncertainty of the other fluxes due to the high turbidity of the water in the Tana: assuming (as a rough estimate) an average light penetration depth of \SI{20}{\cm} and a surface area of \SI{38.5}{\km\squared} (cfr. $CO_2$ evasion), the total C fixation rate due to photosynthesis is estimated at \SI{7.5}{\mega\mol}, \SI{10.6}{\mega\mol} and \SI{9.1}{\mega\mol} during the seasons of respectively 2012, 2013 and 2014, which is negligible compared to the other C fluxes and rates considered.
+\item [(5)] weathering in the floodplain will result in DIC inputs to the river through the ground water or flood water. During carbonate weathering, between 1 and 2 moles of $HCO_3^-$ is transferred to the river per mole of $Ca^{2+}$/$Mg^{2+}$, depending on whether the $CO_2$ to initiate the reaction is derived from the river water or from soil/ground water. Silicate weathering will increase the $HCO_3^-$ with one mole per mole increase of DSi. In the case of the lower Tana River, we only considered carbonate weathering because the concentrations of $Ca^{2+}$and $Mg^{2+}$ varied with DIC while the flux of DSi increased with only \SI{14}{\mega\mol} in 2013 and was decreasing (\SI{-0.4}{\mega\mol}) in 2014, and the concentration was not correlated with discharge or DIC.
+	\item [(6)] the respiration of POC will result in the production of DIC and DOC. As a first estimate, the magnitude of this flux can be calculated based on the balance between the fluxes of POC in and out of the river section, and the exchange with the floodplain. However, this calculation does not consider the microbial growth which converts DOC into POC. The partitioning coefficient to distribute the respired POC over DOC and DIC could be a tuning parameter in modeling studies. 
+\item [(7)] the mineralization of DOC transfers C to the DIC pool and the POC pool (as bacterial biomass). The bacterial growth efficiency (BGE), i.e., the fraction of C taken up by bacteria and converted into biomass, ranges between 0.02 and 0.40 for tropical systems \parencite{Amado2013}. In the case-study of the Tana River, the respiration of POC (6) and DOC (7) was simplified to reduce the number of tuning parameters. Therefore, we assumed that the amount of respired POC (flux 6) was completely transferred to the DOC pool, which is equivalent to a partitioning coefficient (DIC:DOC) of 0:1. The BGE was assumed to be 0, so the mineralised DOC is completely transformed to DIC. By doing these simplifications, the magnitude of the flux due to respiration of POC can be easily assessed based on a flux balance of the POC pool, and the measured flux due to respiration, which included both respiration of DOC and POC, can be represented by a single respiration flux from DOC to DIC.
+\item [(8)] a part of the C transiting the river section will be lost from the system through $CO_2$ evasion. The magnitude of this flux will depend on the $pCO_2$ of the river water relative to the atmosphere, the river surface area and $K_{600}$, which is dependent on the water turbulence. The calculation method for this flux in the Tana river is explained previously in \autoref{sec:flux_calc}.
+\item [(9)] during flooded conditions, floodplain water can transport large amounts of C from the floodplain to the river. This flux consists of DIC as a result of floodplain respiration and DOC. These fluxes were only calculated for the flooded season of 2013 by closing the C balance. The flooding-induced increase of DIC flux due to weathering and the POC flux was already taken into account in fluxes (5) and (3).
+\end{description}
+
+In order to apply this framework to the data collected in this study, we first calculated the C transport fluxes at the inflow and outflow stations of our river stretch (Garissa and Garsen, \autoref{tab:ch4_seasFluxes}), as well as the magnitude of POC exchange with the floodplain and the weathering-derived DIC flux (\autoref{fig:ch4_flowcombi}). For the datasets collected in 2012 and 2014, the other components of our framework could then be calculated based on mass balance considerations. For the 2013 dataset, the latter was not possible because there was a negative balance for the POC and an additional net input of DIC and DOC from the floodplain. In this case, we resorted to calculating the magnitude of respiration and $CO_2$ evasion over the entire river section as the average values of those obtained for Garissa and Garsen, and calculated the DIC and DOC inputs from the floodplain as the closing term for the overall C balance.  This kind of representation of the data will help with the discussion of the fluxes.
+
+\begin{figure}
+\includegraphics[width=120mm]{fig9_flowcombi_proc.png}
+\caption{Application of the conceptual framework to the calculated fluxes during the three campaigns. The width of the lines, proportional to the magnitude of the fluxes, are consistent within one year, but not between the different years. }
+\label{fig:ch4_flowcombi}
+\end{figure}
+
+The correct estimation of exchange of POC with the floodplain is important to close the carbon budgets properly. In 2012, the net deposition seems to be estimated relatively well, as the mineralisation of DOC and the flux to the atmosphere based on the mass balance fall within the range of the calculated values based on the measurements. Even though there were no measurements for the carbonate weathering, the mass balance estimates would still be within range, if the weathering would have been in the same order of magnitude as in 2014. The deposition of POC during the flooded season in 2013 turned out to be an overestimation as the POC left in the river was \SI{90}{\mega\mol} less than what was measured in Garsen. As a result, there was no POC remaining to be mineralised, which is quite unrealistic, and an additional flux had to be drawn from the floodplain to close the budget. In 2014, a closed carbon budget was possible despite the relatively large POC flux from the floodplain to the river, but the respiration and outgassing flux where more than double of the estimates based on the calculations. 
+
+The flux from OC to DIC and the outgassing were during the non-flooded seasons relatively well in balance with each other when estimated by both methods (mass balance and calculations). This balance over the whole study area can hide local imbalance, as is clear from the range of estimates, whereby the DIC production by respiration in Garissa is much larger than the outgassing, while the reverse is true at Garsen. This indicate that there is a strong longitudinal gradient in the ratio between them. In Garissa, the outgassing can for \SI{100}{\percent} be supported by local respiration, while there is still excess that will be transported downstream. At Garsen, the $CO_2$ evasion can only partly be attributed to local respiration, while also some will have been produced more upstream in the river. Besides the in-situ respiration, additional lateral fluxes of DIC have been reported as an important source for the riverine $CO_2$ flux to the atmosphere \parencite{Hotchkiss2015, Tweed2015}. To assess the importance of these lateral fluxes in the Tana River, additional research about the ground water flows would be required.
+
+The balance between in-situ respiration and outgassing by the river is lost during the flooded season in 2013, as outgassing is almost double of the respiration. This increased outgassing is fuelled by DIC fluxes coming from the floodplain. Half of the floodplain flux could be associated with weathering processes, based on the strong increase in $Ca^{2+}$ and $Mg^{2+}$, while the other half was likely due to respiration within the floodplain waters which flew back to the main river. Most of the $CO_2$ from these floodplain fluxes was still in the river at Garsen and was further transported to the delta and the ocean. This could lead to a temporal acidification of those waters as a result of the flooding. 
+
+\section{Conclusions and outlook}
+The monitoring of the sediment and carbon fluxes at a daily resolution during the wet seasons has shown that is imperative to consider wet seasons with extensive flooding as a different situation than the wet seasons without substantial flooding when studying the sediment and carbon dynamics of river systems . The POC was the dominant species during the non-flooded seasons and a downstream decrease in total C flux was observed, while the DIC was the dominant species during the flooded conditions along with an increase in total C.  
+
+The differentiation between hydrological conditions is especially important when calculating annual C fluxes for the river systems with alterations between dry seasons and wet seasons which occasionally lead to extensive flooding, as the occurrence of a strong wet season influences both the magnitude and the speciation of C. Therefore, we proposed a framework to identify the main processes regulating C transport in the river system. The application of this framework on our dataset has revealed that a proper quantification of the amount of POC which is deposited or mobilised is a key factor to have a realistic carbon budget . Furthermore, it pointed out that the respiration and outgassing of the Tana River were well balanced during the non-flooded seasons. Outgassing during the flooded season was fuelled by inputs from the floodplains and a large amount of DIC was further transported towards the delta.
+
+The difference in dynamics between non-flooded and flooded conditions also presents challenges for modelling C dynamics in such river systems. The first challenge is the need for data covering not only the full spectrum of the hydrograph, but ideally also including process and flux rates within the inundated floodplains. This is further complicated by the relatively low frequency and predictability of the flooding events. The second challenge is the probable influence of the magnitude of the flooding and the time span of the flooding, especially because the floodplain can still be flooded and partially connected to the river, even when the discharge in the river has decreased. Therefore, a C dynamics model for the flooded state has to be closely linked to a hydrological model.
+
+
+\printbibliography[title={References},heading=bibintoc]
+
+
+\end{document}

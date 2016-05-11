@@ -1,0 +1,324 @@
+\documentclass[coverfontpercent=75,custombibtex,final]{adsphd}
+%\documentclass[pagebackref,showlabels,biblatex,biber,biblatexstyle=authoryear]{adsphd}
+%\documentclass[croppedpdf,pagebackref,showinstructions]{adsphd}
+%\documentclass[online]{adsphd}
+%\documentclass[print]{adsphd}
+
+% To use biblatex:
+%\documentclass[biblatex,biber,biblatexstyle=authoryear,showinstructions,showlabels]{adsphd}
+
+% Preamble {{{}{
+\usepackage{caption}
+\captionsetup{font=footnotesize}
+\DeclareCaptionLabelFormat{adja-page}{#1 #2 \emph{(cont.)}}
+
+\usepackage{microtype}
+\DisableLigatures{encoding = *, family = *}
+
+\usepackage[style = authoryear-comp, sorting = nyt, sortcites = false, backend=biber, 
+				maxcitenames=2, mincitenames=1, maxbibnames=99,
+				firstinits=true, uniquename=false, uniquelist=false,dashed=false]{biblatex}
+
+\usepackage[english,dutch]{babel}
+%\DeclareLanguageMapping{english}{english-apa}
+
+
+% Specify the .bib file
+\addbibresource{C:/DATA_HanneV/PhD/adsphd-master/HannePapers.bib}
+
+
+\renewcommand*{\nameyeardelim}{,\space}
+\PassOptionsToPackage{sortcites=true}{biblatex}
+\PassOptionsToPackage{uniquename=false}{biblatex}
+%\PassOptionsToPackage{firstinits=true}{biblatex}
+\PassOptionsToPackage{uniquelist=false}{biblatex}
+%\PassOptionsToPackage{maxnames=99}{biblatex}
+%\PassOptionsToPackage{maxcitenames=2}{biblatex}
+
+
+%\usepackage{microtype}
+%\DisableLigatures{encoding = *,family = *}
+%
+%\usepackage{pdfpages}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\LARGE\bf\sffamily\raggedright}{\chaptertitlename \vspace{1pt} \thechapter}{5pt}{\huge}
+\titlespacing{\chapter} {0pt}{0pt}{20pt}
+
+\usepackage[titletoc]{appendix}
+\newcommand*{\Appendixautorefname}{appendix}
+
+\addto\extrasenglish{%
+  \renewcommand{\chapterautorefname}{Chapter}%
+	\renewcommand{\sectionautorefname}{Section}%
+	\renewcommand{\subsectionautorefname}{Subsection}%
+}
+
+%
+\usepackage{siunitx}
+\sisetup{separate-uncertainty=true, load-configurations = abbreviations, range-units=single,multi-part-units=single}
+\DeclareSIUnit\year{yr}
+\DeclareSIUnit\PgC{PgC}
+\DeclareSIUnit\tC{tC}
+\DeclareSIUnit\perthou{\text{\textperthousand}}
+\DeclareSIUnit\ppm{ppm}
+\DeclareSIUnit\keV{keV}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\mrl{(m river length)}
+\DeclareSIUnit\coeq{(CO_2 eq.)}
+\DeclareSIUnit\meq{meq}
+\DeclareSIUnit\molair{M}
+
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+
+\usepackage{csquotes}
+
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array} 
+\setlength{\extrarowheight}{1pt}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ltablex}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{afterpage}
+\usepackage{pdflscape}
+\usepackage[flushleft]{threeparttable}
+\usepackage{xspace}
+\usepackage{mdframed}
+\usepackage[most]{tcolorbox}
+\usepackage{capt-of}
+\usepackage{enumerate}
+\usepackage[table]{xcolor}
+
+
+%\pgfplotstableset{% global config, for example in the preamble
+		%% these columns/<colname>/.style={<options>} things define a style
+		%% which applies to <colname> only.
+		%every head row/.style={before row=\toprule,after row=\midrule},
+		%every last row/.style={after row=\bottomrule}
+		%}
+%
+%\usepackage{verbatim}
+%
+
+
+\usepackage{nomencl}   % For nomenclature
+\usepackage[toc]{glossary} % For list of abbreviations
+%\renewcommand*{\glossaryentrynumbers}[1]{}
+%\input{glossary}
+%\makeglossaries
+%\glossarystyle{altlist}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!                                                               !!
+% !!  WARNING: do not remove the following lines between           !!
+% !!  "%%% COVER: Settings %%%" and "%%% COVER: End settings %%%"  !!
+% !!                                                               !!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+%%% COVER: Settings %%%
+\title{Evaluating agricultural management from field to catchment scale}
+\subtitle{Development of a parsimonious agro-hydrological model}
+
+\author{Hanne}{Van Gaelen}
+
+\supervisor{Prof.~Dirk~Raes}{}
+\supervisor{Prof.~Patrick~Willems}{}
+\supervisor{Prof.~Jan~Diels}{}
+%\cosupervisor{Prof.~dr.~ir.~S.Leader}{}
+
+\president{Prof.~Marc~Hendrickx}
+\jury{Prof.~Jos~Van Orshoven\\
+      Prof.~Anton~Van Rompaey\\   
+}
+\externaljurymember{Dr.~Lee~Khen Heng}{IAEA}
+\externaljurymember{Prof.~Ann~van Griensven}{Vrije Universiteit Brussel}
+
+\phddegree{Bioscience Engineering} % "Doctor of ..."
+\faculty{Faculty of Bioscience Engineering}
+\department{Department of Earth and Environmental Sciences}
+
+% Your research group within the department
+% e.g. iMinds-DistriNet, Scientific Computing Group, ...
+\researchgroup{Division of Soil and Water Management}
+\website{http://www.ees.kuleuven.be} % Leave empty to hide
+\email{hanne.vangaelen@kuleuven.be} % Leave empty to hide
+
+\address{Celestijnenlaan 200E}
+% \addresscity{B-3001 Leuven} % This is the default value. Note
+                              % that 'B-3001 Heverlee' is _incorrect_!!
+                              % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
+
+\date{September 2016}
+\copyyear{2016}
+%\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
+%\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
+                         % automatically)
+%\isbn{XXX-XX-XXXX-XXX-X}
+
+
+% Set spine width:
+\setlength{\adsphdspinewidth}{9mm}
+
+%% Set bleeds
+%\setlength{\defaultlbleed}{7mm}
+%\setlength{\defaultrbleed}{7mm}
+
+% Set custom cover page
+% \setcustomcoverpage{mycoverpage.tex} % mycoverpage.tex is the default
+
+%%% COVER: End settings %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% for the nomenclature
+%\renewcommand{\nomname}{List of Symbols}
+%\makeatletter
+%\let\@printnomenclatureorig\@printnomenclature
+%\def\@printnomenclature[#1]{%
+%  \cleardoublepage%
+%  \chaptermark{\nomname}
+%  \@printnomenclatureorig[#1]
+%}
+%\makeatother
+%\makenomenclature
+
+% for the list of abbreviations.
+%\newcommand{\glossname}{Abbreviations}
+%\makeglossary
+
+% To avoid problems, do NOT change the layout of the following two
+% commands
+\let\printglossaryorig\printglossary
+\renewcommand{\printglossary}{%
+  \renewcommand{\glossaryname}{\glossname}
+  \cleardoublepage%
+  \printglossaryorig\chaptermark{\glossname}}
+
+
+% Bibtex style
+%\bibstyle{abbrv}
+%\bibstyle{acm}
+%\bibstyle{ieeetr}
+
+% Own commands
+\InputIfFileExists{defs}{}{} % defs.tex, contains own preamble settings
+
+
+%xspace is nodig om de juiste spacing te krijgen en dat woorden niet aan een plakken http://tex.stackexchange.com/questions/17730/newcommand-and-spacing
+
+	% symbols used a lot (not italics)
+	\newcommand{\COtwo}{CO$_2$\xspace}  
+	\newcommand{\Rsq}{R$^{2}$\xspace}
+	\newcommand{\TAWp}{TAW$+$\xspace}		
+	\newcommand{\TAWm}{TAW$-$\xspace}
+    \newcommand{\Ksat}{K$_{sat}$\xspace}
+    \newcommand{\Tpwp}{$\theta_{PWP}$\xspace}
+    \newcommand{\Tsat}{$\theta_{SAT}$\xspace}
+    \newcommand{\Tfc}{$\theta_{FC}$\xspace}
+        		
+	%variables that can be in italics
+	\newcommand{\Tmin}{$T_{min}$\xspace}
+	\newcommand{\Tmax}{$T_{max}$\xspace}
+	\newcommand{\ETo}{$ET_{0}$\xspace}
+	\newcommand{\CCx}{$CC_{x}$\xspace}
+	\newcommand{\CCo}{$CC_{0}$\xspace}
+	\newcommand{\CCwf}{$CC_{WF}$\xspace}
+	\newcommand{\CCw}{$CC_{W}$\xspace}
+	\newcommand{\CCTOT}{$CC_{TOT}$\xspace}	
+	\newcommand{\fweed}{$f_{weed}$\xspace}	
+	\newcommand{\fshape}{$f_{shape}$\xspace}		
+	\newcommand{\ET}{$ET$\xspace}
+	\newcommand{\HI}{$hi$\xspace}
+	\newcommand{\Tr}{$Tr$\xspace}	
+	\newcommand{\E}{$E$\xspace}	
+	\newcommand{\CC}{$CC$\xspace}
+    \newcommand{\B}{$B$\xspace}	
+    \newcommand{\Y}{$Y$\xspace}	
+	\newcommand{\Bref}{$B_{ref}$\xspace}
+	\newcommand{\Bstress}{$B_{stress}$\xspace}
+	\newcommand{\Brel}{$B_{rel}$\xspace}
+
+	\newcommand{\RC}{$RC$\xspace}	
+	\newcommand{\SWC}{$SWC$\xspace}	
+	\newcommand{\SWCr}{$SWC_r$\xspace}		
+
+		
+	%variables that can be in italics but need special definition or look weird
+	\newcommand{\WPET}{\textit{WP}$_{ET}$\xspace}
+	\newcommand{\WPster}{\textit{wp}$^*$\xspace}
+
+
+
+
+	
+% }{}}}  <-- Preamble
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\makefrontcoverXII
+
+%\maketitle
+\frontmatter % to get \pagenumbering{roman}
+
+%\includepreface{preface}
+%\includeabstract{abstract}
+%\includeabstractnl{abstractnl}
+
+%\includeabbreviations{abbreviations}
+
+\setcounter{tocdepth}{0}
+%\tableofcontents
+\setcounter{tocdepth}{2}
+
+%%%\listoffigures
+%%%\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mainmatter % to get \pagenumbering{arabic}
+
+%\includechapter{introduction}
+%\includechapter{aquacrop}
+%\includechapter{fertility}
+%\includechapter{weed}
+\includechapter{scenario}
+%\includechapter{aquacrophydro}
+%\includechapter{achtoep}
+%\includechapter{conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\begin{appendices}
+%\includeappendix{myappendixA}
+%\includeappendix{myappendixB}
+\end{appendices}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\printbibliography[title={References},heading=bibintoc]
+
+%\includecv{curriculum}
+
+%\makebackcoverXII
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

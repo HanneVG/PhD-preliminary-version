@@ -1,0 +1,261 @@
+\documentclass[coverfontpercent=75,custombibtex]{adsphd}
+%\documentclass[pagebackref,showlabels,biblatex,biber,biblatexstyle=authoryear]{adsphd}
+%\documentclass[croppedpdf,pagebackref,showinstructions]{adsphd}
+%\documentclass[online]{adsphd}
+%\documentclass[print]{adsphd}
+
+% To use biblatex:
+%\documentclass[biblatex,biber,biblatexstyle=authoryear,showinstructions,showlabels]{adsphd}
+
+% Preamble {{{}{
+\usepackage{caption}
+\captionsetup{font=footnotesize}
+\DeclareCaptionLabelFormat{adja-page}{#1 #2 \emph{(cont.)}}
+
+\usepackage[style = authoryear-comp, sorting = nyt, sortcites = false, backend=biber, 
+				maxcitenames=2, mincitenames=1, maxbibnames=99,
+				firstinits=true, uniquename=false, uniquelist=false,dashed=false]{biblatex}
+
+\usepackage[english,dutch]{babel}
+%\DeclareLanguageMapping{english}{english-apa}
+
+% Specify the .bib file
+\addbibresource{D:/Naomi/articles/bibtex/libraryJab.bib}
+\renewcommand*{\nameyeardelim}{,\space}
+\PassOptionsToPackage{sortcites=true}{biblatex}
+\PassOptionsToPackage{uniquename=false}{biblatex}
+%\PassOptionsToPackage{firstinits=true}{biblatex}
+\PassOptionsToPackage{uniquelist=false}{biblatex}
+%\PassOptionsToPackage{maxnames=99}{biblatex}
+%\PassOptionsToPackage{maxcitenames=2}{biblatex}
+
+%\usepackage{microtype}
+%\DisableLigatures{encoding = *,family = *}
+%
+%\usepackage{pdfpages}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\LARGE\bf\sffamily\raggedright}{\chaptertitlename \vspace{1pt} \thechapter}{5pt}{\huge}
+\titlespacing{\chapter} {0pt}{0pt}{20pt}
+
+\usepackage[titletoc]{appendix}
+\newcommand*{\Appendixautorefname}{appendix}
+
+\addto\extrasenglish{%
+  \renewcommand{\chapterautorefname}{Chapter}%
+	\renewcommand{\sectionautorefname}{Section}%
+}
+
+%
+\usepackage{siunitx}
+\sisetup{separate-uncertainty=true, load-configurations = abbreviations, range-units=single,multi-part-units=single}
+\DeclareSIUnit\year{yr}
+\DeclareSIUnit\PgC{PgC}
+\DeclareSIUnit\tC{tC}
+\DeclareSIUnit\perthou{\text{\textperthousand}}
+\DeclareSIUnit\ppm{ppm}
+\DeclareSIUnit\keV{keV}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\mrl{(m river length)}
+\DeclareSIUnit\coeq{(CO_2 eq.)}
+\DeclareSIUnit\meq{meq}
+\DeclareSIUnit\molair{M}
+
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+
+\usepackage{csquotes}
+
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array} 
+\setlength{\extrarowheight}{1pt}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{rotating}
+
+\usepackage{pdflscape}
+
+%\pgfplotstableset{% global config, for example in the preamble
+		%% these columns/<colname>/.style={<options>} things define a style
+		%% which applies to <colname> only.
+		%every head row/.style={before row=\toprule,after row=\midrule},
+		%every last row/.style={after row=\bottomrule}
+		%}
+%
+%\usepackage{verbatim}
+%
+
+
+\usepackage{nomencl}   % For nomenclature
+\usepackage[toc]{glossary} % For list of abbreviations
+%\renewcommand*{\glossaryentrynumbers}[1]{}
+%\input{glossary}
+%\makeglossaries
+%\glossarystyle{altlist}
+
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!                                                               !!
+% !!  WARNING: do not remove the following lines between           !!
+% !!  "%%% COVER: Settings %%%" and "%%% COVER: End settings %%%"  !!
+% !!                                                               !!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+%%% COVER: Settings %%%
+\title{Hydrological impacts on the carbon dynamics of large tropical river systems}
+%\subtitle{Multiscale computing for Dummies}
+
+\author{Naomi}{Geeraert}
+
+\supervisor{Prof.~Steven~Bouillon}{}
+\supervisor{Prof.~Gerard~Govers}{}
+\supervisor{Prof.~Okke~Batelaan}{}
+%\cosupervisor{Prof.~dr.~ir.~S.Leader}{}
+\president{Prof.~Martin~Hermy}
+\jury{Prof.~Roel~Merckx\\
+      Prof.~Gert~Verstraeten
+}
+\externaljurymember{Dr.~Paolo~Paron}{UNESCO-IHE}
+\externaljurymember{Prof.~Jack~Middelburg}{Universiteit Utrecht}
+
+\phddegree{Bioscience Engineering} % "Doctor of ..."
+\faculty{Faculty of Bioscience Engineering}
+\department{Department of Earth and Environmental Sciences}
+
+% Your research group within the department
+% e.g. iMinds-DistriNet, Scientific Computing Group, ...
+\researchgroup{Division of Soil and Water Management}
+\website{http://www.ees.kuleuven.be} % Leave empty to hide
+\email{naomi.geeraert@ees.kuleuven.be} % Leave empty to hide
+
+\address{Celestijnenlaan 200E}
+% \addresscity{B-3001 Leuven} % This is the default value. Note
+                              % that 'B-3001 Heverlee' is _incorrect_!!
+                              % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
+
+\date{December 2015}
+\copyyear{2015}
+%\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
+%\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
+                         % automatically)
+%\isbn{XXX-XX-XXXX-XXX-X}
+
+
+% Set spine width:
+\setlength{\adsphdspinewidth}{9mm}
+
+%% Set bleeds
+%\setlength{\defaultlbleed}{7mm}
+%\setlength{\defaultrbleed}{7mm}
+
+% Set custom cover page
+% \setcustomcoverpage{mycoverpage.tex} % mycoverpage.tex is the default
+
+%%% COVER: End settings %%%
+
+% for the nomenclature
+%\renewcommand{\nomname}{List of Symbols}
+%\makeatletter
+%\let\@printnomenclatureorig\@printnomenclature
+%\def\@printnomenclature[#1]{%
+%  \cleardoublepage%
+%  \chaptermark{\nomname}
+%  \@printnomenclatureorig[#1]
+%}
+%\makeatother
+%\makenomenclature
+
+% for the list of abbreviations.
+%\newcommand{\glossname}{Abbreviations}
+%\makeglossary
+
+% To avoid problems, do NOT change the layout of the following two
+% commands
+\let\printglossaryorig\printglossary
+\renewcommand{\printglossary}{%
+  \renewcommand{\glossaryname}{\glossname}
+  \cleardoublepage%
+  \printglossaryorig\chaptermark{\glossname}}
+
+
+% Bibtex style
+%\bibstyle{abbrv}
+%\bibstyle{acm}
+%\bibstyle{ieeetr}
+
+% Own commands
+\InputIfFileExists{defs}{}{} % defs.tex, contains own preamble settings
+\newcommand{\COtwo}{$CO_2$}
+\newcommand{\dCDOC}{$\delta^{13}C_{DOC}\,$}
+\newcommand{\dCDIC}{$\delta^{13}C_{DIC}\,$}
+\newcommand{\dCPOC}{$\delta^{13}C_{POC}\,$}
+\newcommand{\dC}{$\delta^{13}C\,$}
+\newcommand{\dOHO}{$\delta^{18}O_{H_2O}\,$}
+
+% }{}}}  <-- Preamble
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\makefrontcoverXII
+
+\maketitle
+
+\frontmatter % to get \pagenumbering{roman}
+
+\includepreface{preface}
+\includeabstract{abstract}
+\includeabstractnl{abstractnl}
+
+\includeabbreviations{abbreviations}
+
+\setcounter{tocdepth}{0}
+\tableofcontents
+\setcounter{tocdepth}{2}
+
+%%%\listoffigures
+%%%\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mainmatter % to get \pagenumbering{arabic}
+
+\includechapter{introduction}
+\includechapter{matmeth}
+\includechapter{tsm}
+\includechapter{processes}
+\includechapter{incubation}
+\includechapter{fluxes}
+\includechapter{model}
+%\include{./chapters/model/model}
+
+\includechapter{conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\begin{appendices}
+\includeappendix{myappendix}
+\end{appendices}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\printbibliography[title={References},heading=bibintoc]
+
+\includecv{curriculum}
+
+%\makebackcoverXII
+
+\end{document}
+
+
