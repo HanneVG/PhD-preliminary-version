@@ -81,7 +81,7 @@
       <file>thesis.bcf</file>
     </requires>
     <requires type="editable">
-      <file>C:/DATA_HanneV/PhD/adsphd-master/HannePapers.bib</file>
+      <file>C:/DATA_HanneV/PhD/adsphd-master/HannePapers_final.bib</file>
     </requires>
   </external>
 </requests>

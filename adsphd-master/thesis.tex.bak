@@ -24,7 +24,7 @@
 
 
 % Specify the .bib file
-\addbibresource{C:/DATA_HanneV/PhD/adsphd-master/HannePapers.bib}
+\addbibresource{C:/DATA_HanneV/PhD/adsphd-master/HannePapers_final.bib}
 
 
 \renewcommand*{\nameyeardelim}{,\space}
@@ -58,17 +58,10 @@
 %
 \usepackage{siunitx}
 \sisetup{separate-uncertainty=true, load-configurations = abbreviations, range-units=single,multi-part-units=single}
-\DeclareSIUnit\year{yr}
-\DeclareSIUnit\PgC{PgC}
-\DeclareSIUnit\tC{tC}
-\DeclareSIUnit\perthou{\text{\textperthousand}}
 \DeclareSIUnit\ppm{ppm}
-\DeclareSIUnit\keV{keV}
-\DeclareSIUnit\atm{atm}
-\DeclareSIUnit\mrl{(m river length)}
-\DeclareSIUnit\coeq{(CO_2 eq.)}
-\DeclareSIUnit\meq{meq}
-\DeclareSIUnit\molair{M}
+\DeclareSIUnit\volper{vol\%}
+\DeclareSIUnit\GDD{GDD}
+\DeclareSIUnit\plants{plants}
 
 \usepackage{amsmath}%
 \usepackage{amsfonts}%
@@ -94,6 +87,7 @@
 \usepackage{capt-of}
 \usepackage{enumerate}
 \usepackage[table]{xcolor}
+\usepackage{afterpage}
 
 
 %\pgfplotstableset{% global config, for example in the preamble
@@ -141,7 +135,7 @@
 \jury{Prof.~Jos~Van Orshoven\\
       Prof.~Anton~Van Rompaey\\   
 }
-\externaljurymember{Dr.~Lee~Khen Heng}{IAEA}
+\externaljurymember{Dr.~Lee~Kheng Heng}{International Atomic Energy Agency}
 \externaljurymember{Prof.~Ann~van Griensven}{Vrije Universiteit Brussel}
 
 \phddegree{Bioscience Engineering} % "Doctor of ..."
@@ -159,7 +153,7 @@
                               % that 'B-3001 Heverlee' is _incorrect_!!
                               % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
 
-\date{September 2016}
+\date{2016}
 \copyyear{2016}
 %\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
 %\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
@@ -216,49 +210,57 @@
 
 %xspace is nodig om de juiste spacing te krijgen en dat woorden niet aan een plakken http://tex.stackexchange.com/questions/17730/newcommand-and-spacing
 
-	% symbols used a lot (not italics)
-	\newcommand{\COtwo}{CO$_2$\xspace}  
-	\newcommand{\Rsq}{R$^{2}$\xspace}
+	% abbreviations used a lot or parameters (not italics)
+	\newcommand{\COtwo}{CO\textsubscript{2}\xspace} 
+	\newcommand{\COtwocon}{[CO\textsubscript{2}]\xspace} 	 
+	\newcommand{\Rsq}{R\textsuperscript{2}\xspace}
 	\newcommand{\TAWp}{TAW$+$\xspace}		
 	\newcommand{\TAWm}{TAW$-$\xspace}
-    \newcommand{\Ksat}{K$_{sat}$\xspace}
+    \newcommand{\Ksat}{K\textsubscript{sat}\xspace}
     \newcommand{\Tpwp}{$\theta_{PWP}$\xspace}
     \newcommand{\Tsat}{$\theta_{SAT}$\xspace}
     \newcommand{\Tfc}{$\theta_{FC}$\xspace}
-        		
-	%variables that can be in italics
-	\newcommand{\Tmin}{$T_{min}$\xspace}
-	\newcommand{\Tmax}{$T_{max}$\xspace}
-	\newcommand{\ETo}{$ET_{0}$\xspace}
+	\newcommand{\fweed}{f\textsubscript{weed}\xspace}	
+	\newcommand{\fshape}{f\textsubscript{shape}\xspace}
+	\newcommand{\fsink}{f\textsubscript{sink}\xspace}
+	\newcommand{\fcotwo}{f\textsubscript{CO\textsubscript{2}}\xspace}
+	\newcommand{\HI}{hi\xspace}	
+	\newcommand{\KcTr}{Kc\textsubscript{Tr}\xspace}	
+	\newcommand{\KET}{K\textsubscript{ET}\xspace}	
+	\newcommand{\Ksb}{Ks\textsubscript{b}\xspace}
+	\newcommand{\pbf}{p\textsubscript{BF}\xspace}
+	\newcommand{\WPster}{wp$^*$\xspace}
+	        		
+	% variables (capitals and in italics)
 	\newcommand{\CCx}{$CC_{x}$\xspace}
 	\newcommand{\CCo}{$CC_{0}$\xspace}
 	\newcommand{\CCwf}{$CC_{WF}$\xspace}
 	\newcommand{\CCw}{$CC_{W}$\xspace}
 	\newcommand{\CCTOT}{$CC_{TOT}$\xspace}	
-	\newcommand{\fweed}{$f_{weed}$\xspace}	
-	\newcommand{\fshape}{$f_{shape}$\xspace}		
-	\newcommand{\ET}{$ET$\xspace}
-	\newcommand{\HI}{$hi$\xspace}
-	\newcommand{\Tr}{$Tr$\xspace}	
-	\newcommand{\E}{$E$\xspace}	
 	\newcommand{\CC}{$CC$\xspace}
     \newcommand{\B}{$B$\xspace}	
     \newcommand{\Y}{$Y$\xspace}	
 	\newcommand{\Bref}{$B_{ref}$\xspace}
 	\newcommand{\Bstress}{$B_{stress}$\xspace}
 	\newcommand{\Brel}{$B_{rel}$\xspace}
-
+    \newcommand{\Zr}{$Zr$\xspace}		
+	
+	\newcommand{\Tr}{$Tr$\xspace}	
+	\newcommand{\CR}{$CR$\xspace}	
+	\newcommand{\DP}{$DP$\xspace}	
+	\newcommand{\RO}{$RO$\xspace}
+	\newcommand{\ET}{$ET$\xspace}
+    \newcommand{\E}{$E$\xspace}	
 	\newcommand{\RC}{$RC$\xspace}	
 	\newcommand{\SWC}{$SWC$\xspace}	
-	\newcommand{\SWCr}{$SWC_r$\xspace}		
-
+	\newcommand{\SWCr}{$SWC_r$\xspace}
+	
+	\newcommand{\ETo}{$ET_{0}$\xspace}	
+	\newcommand{\Tmin}{$T_{min}$\xspace}
+	\newcommand{\Tmax}{$T_{max}$\xspace}
 		
 	%variables that can be in italics but need special definition or look weird
 	\newcommand{\WPET}{\textit{WP}$_{ET}$\xspace}
-	\newcommand{\WPster}{\textit{wp}$^*$\xspace}
-
-
-
 
 	
 % }{}}}  <-- Preamble
@@ -272,17 +274,17 @@
 
 %\makefrontcoverXII
 
-%\maketitle
+\maketitle
 \frontmatter % to get \pagenumbering{roman}
 
-%\includepreface{preface}
-%\includeabstract{abstract}
-%\includeabstractnl{abstractnl}
+\includepreface{preface}
+\includeabstract{abstract}
+\includeabstractnl{abstractnl}
 
-%\includeabbreviations{abbreviations}
+\includeabbreviations{abbreviations}
 
-\setcounter{tocdepth}{0}
-%\tableofcontents
+\setcounter{tocdepth}{1}
+\tableofcontents
 \setcounter{tocdepth}{2}
 
 %%%\listoffigures
@@ -292,30 +294,30 @@
 
 \mainmatter % to get \pagenumbering{arabic}
 
-%\includechapter{introduction}
-%\includechapter{aquacrop}
-%\includechapter{fertility}
-%\includechapter{weed}
+\includechapter{introduction}
+\includechapter{aquacrop}
+\includechapter{fertility}
+\includechapter{weed}
 \includechapter{scenario}
-%\includechapter{aquacrophydro}
-%\includechapter{achtoep}
-%\includechapter{conclusion}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\includechapter{aquacrophydro}
+\includechapter{achtoep}
+\includechapter{conclusion}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \appendix
 \begin{appendices}
-%\includeappendix{myappendixA}
-%\includeappendix{myappendixB}
+\includeappendix{myappendixA}
+\includeappendix{myappendixB}
 \end{appendices}%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
-
+%
 \printbibliography[title={References},heading=bibintoc]
 
-%\includecv{curriculum}
+\includecv{curriculum}
 
 %\makebackcoverXII
 

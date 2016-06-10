@@ -1722,7 +1722,7 @@ De appendices kunnen desgevallend worden gebundeld in een apart boekdeel.
 \newpage
 \thispagestyle{empty}
 %\mbox{}
-Doctoraatsproefschrift nr. 1326 aan de faculteit Bio-ingenieurswetenschappen van de KU Leuven.
+Doctoraatsproefschrift nr. XXXX aan de faculteit Bio-ingenieurswetenschappen van de KU Leuven.
 \vfill
 {\scriptsize\sffamily{\setlength{\parindent}{0ex}\copyright{}~\@copyyear~KU Leuven -- \@faculty \\
 Uitgegeven in eigen beheer, \@authorf~\@authorl, \@address, \@addresspc{} (Belgium)}
